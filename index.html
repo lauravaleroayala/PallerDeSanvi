@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Un petit museu de la memòria i la vida quotidiana de Sant Vicente de Piedrahita, creat per Antonio Ayala Peña.">
+  <title>El paller de Sant Vicente de Piedrahita</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#inici" aria-label="Torna a l'inici">EL PALLER <span>·</span> MEMÒRIA VIVA</a>
+    <nav aria-label="Navegació principal">
+      <a href="#projecte">El projecte</a>
+      <a href="#colleccio">La col·lecció</a>
+      <a href="#poble">El poble</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inici">
+      <div class="hero-content">
+        <p class="eyebrow">Un espai per recordar i compartir</p>
+        <h1>El paller de<br><em>Sant Vicente de Piedrahita</em></h1>
+        <div class="hero-rule"></div>
+        <p class="hero-byline">Per <strong>Antonio Ayala Peña</strong></p>
+        <p class="hero-origin">Natural de San Vicente de Piedrahita des de 1943</p>
+        <a class="text-link" href="#colleccio">Descobreix la col·lecció <span aria-hidden="true">↓</span></a>
+      </div>
+      <div class="hero-image-wrap">
+        <!-- Quan tingueu una foto del paller, deseu-la a imatges/paller.jpg i traieu la classe "image-placeholder". -->
+        <div class="hero-image image-placeholder">
+          <span class="placeholder-icon" aria-hidden="true">✳</span>
+          <span>Una fotografia del paller</span>
+          <small>Afegiu-la a imatges/paller.jpg</small>
+        </div>
+        <!-- Exemple per posar una fotografia:
+        <img class="hero-image" src="imatges/paller.jpg" alt="L'interior del paller d'Antonio">
+        -->
+        <p class="image-caption">Objectes que expliquen una manera de viure.</p>
+      </div>
+      <span class="hero-index" aria-hidden="true">01 / MEMÒRIA</span>
+    </section>
+
+    <section class="intro section-pad" id="projecte">
+      <div class="section-label"><span>01</span> EL PROJECTE</div>
+      <div class="intro-copy">
+        <h2>Un paller ple d’històries.<br><em>Un poble per recordar.</em></h2>
+        <div class="intro-text">
+          <p>Al seu paller, Antonio ha anat reunint objectes que formen part de la memòria de Sant Vicente de Piedrahita: eines, estris de casa, instruments, records de les feines d’abans i de les festes populars.</p>
+          <p>Aquest projecte vol obrir les portes d’aquest petit museu i conservar-ne les històries. Cada objecte és una peça del passat; les paraules i els records d’Antonio ens ajuden a entendre com s’utilitzava i quin lloc ocupava en la vida del poble.</p>
+          <p class="editable-note">Aquest text és provisional: el podeu adaptar a la veu i als records de la família.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="collection section-pad" id="colleccio">
+      <div class="collection-heading">
+        <div>
+          <div class="section-label"><span>02</span> LA COL·LECCIÓ</div>
+          <h2>Petits objectes,<br><em>grans històries.</em></h2>
+        </div>
+        <p class="collection-intro">Exploreu els objectes per temàtiques i descobriu per a què servien, qui els feia servir i què ens expliquen.</p>
+      </div>
+
+      <div class="filters" role="group" aria-label="Filtra els objectes per categoria">
+        <button class="filter-button active" data-filter="Tots" aria-pressed="true">Tots</button>
+        <button class="filter-button" data-filter="La casa" aria-pressed="false">La casa</button>
+        <button class="filter-button" data-filter="Les feines" aria-pressed="false">Les feines</button>
+        <button class="filter-button" data-filter="Música i festes" aria-pressed="false">Música i festes</button>
+        <button class="filter-button" data-filter="Vida al poble" aria-pressed="false">Vida al poble</button>
+      </div>
+
+      <div class="object-grid" id="object-grid">
+        <!-- OBJECTE: per afegir-ne un, copieu una targeta i canvieu-ne les dades.
+             Per afegir una foto, poseu el fitxer a /imatges i canvieu el bloc placeholder per una etiqueta img.
+             Per afegir un àudio, descomenteu el bloc audio i poseu el fitxer a /audio. -->
+        <article class="object-card" data-category="La casa">
+          <div class="object-image image-placeholder">
+            <span class="placeholder-number">01</span><span>Fotografia de l’objecte</span>
+            <small>imatges/objecte-01.jpg</small>
+          </div>
+          <div class="object-info">
+            <p class="object-category">LA CASA</p>
+            <h3>Nom de l’objecte</h3>
+            <p>Expliqueu aquí què és, per a què servia i com s’utilitzava a casa.</p>
+            <p class="object-memory">Un record d’Antonio o una anècdota familiar.</p>
+            <!-- <audio controls preload="none"><source src="audio/objecte-01.mp3" type="audio/mpeg">El navegador no pot reproduir aquest àudio.</audio> -->
+          </div>
+        </article>
+
+        <article class="object-card" data-category="Les feines">
+          <div class="object-image image-placeholder">
+            <span class="placeholder-number">02</span><span>Fotografia de l’objecte</span>
+            <small>imatges/objecte-02.jpg</small>
+          </div>
+          <div class="object-info">
+            <p class="object-category">LES FEINES</p>
+            <h3>Nom de l’eina</h3>
+            <p>Descriviu quina feina permetia fer, qui la feia servir i en quina època de l’any.</p>
+            <p class="object-memory">Podeu afegir-hi una història que s’hagi transmès de generació en generació.</p>
+            <!-- <audio controls preload="none"><source src="audio/objecte-02.mp3" type="audio/mpeg">El navegador no pot reproduir aquest àudio.</audio> -->
+          </div>
+        </article>
+
+        <article class="object-card" data-category="Música i festes">
+          <div class="object-image image-placeholder">
+            <span class="placeholder-number">03</span><span>Fotografia de l’objecte</span>
+            <small>imatges/objecte-03.jpg</small>
+          </div>
+          <div class="object-info">
+            <p class="object-category">MÚSICA I FESTES</p>
+            <h3>Nom de l’instrument o objecte</h3>
+            <p>Expliqueu en quines festes, celebracions o moments s’utilitzava.</p>
+            <p class="object-memory">Qui el tocava o el feia servir? Quina música o tradició us recorda?</p>
+            <!-- <audio controls preload="none"><source src="audio/objecte-03.mp3" type="audio/mpeg">El navegador no pot reproduir aquest àudio.</audio> -->
+          </div>
+        </article>
+
+        <article class="object-card" data-category="Vida al poble">
+          <div class="object-image image-placeholder">
+            <span class="placeholder-number">04</span><span>Fotografia de l’objecte</span>
+            <small>imatges/objecte-04.jpg</small>
+          </div>
+          <div class="object-info">
+            <p class="object-category">VIDA AL POBLE</p>
+            <h3>Nom de l’objecte</h3>
+            <p>Quin paper tenia en la vida del poble? En quins espais o situacions es feia servir?</p>
+            <p class="object-memory">Afegiu-hi els noms, els llocs o els records que ajuden a situar-lo.</p>
+            <!-- <audio controls preload="none"><source src="audio/objecte-04.mp3" type="audio/mpeg">El navegador no pot reproduir aquest àudio.</audio> -->
+          </div>
+        </article>
+      </div>
+      <p class="collection-footnote">Aquesta és una primera selecció d’exemple. La col·lecció pot créixer a poc a poc, sense perdre l’espai i la calma de cada història.</p>
+    </section>
+
+    <section class="village section-pad" id="poble">
+      <div class="section-label"><span>03</span> EL LLOC D’ON VENIM</div>
+      <div class="village-layout">
+        <div class="village-copy">
+          <h2>Sant Vicente<br><em>de Piedrahita.</em></h2>
+          <p>Per entendre els objectes, també cal conèixer el lloc on van formar part de la vida quotidiana. Aquesta secció és una finestra a la història, el paisatge i les tradicions de Sant Vicente de Piedrahita.</p>
+          <p class="editable-note">Afegiu-hi una breu història del poble, records de la família, festes, oficis o dades que vulgueu preservar.</p>
+        </div>
+        <div class="village-photos">
+          <figure>
+            <div class="village-photo image-placeholder">
+              <span>Fotografia del poble</span><small>imatges/poble.jpg</small>
+            </div>
+            <figcaption>El poble i el seu paisatge</figcaption>
+          </figure>
+          <figure>
+            <div class="village-photo image-placeholder">
+              <span>Escut o imatge històrica</span><small>imatges/escut.jpg</small>
+            </div>
+            <figcaption>Un símbol de la identitat local</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="closing">
+      <p class="eyebrow">La memòria es conserva compartint-la</p>
+      <h2>Gràcies, Antonio,<br><em>per guardar aquestes històries.</em></h2>
+      <p>Un projecte familiar per preservar el passat i fer-lo arribar a les generacions que vindran.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand" href="#inici">EL PALLER <span>·</span> MEMÒRIA VIVA</a>
+    <p>Creat amb estima per la memòria de Sant Vicente de Piedrahita.</p>
+    <a href="#inici" class="back-top">Torna a l’inici ↑</a>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
