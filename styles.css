@@ -105,3 +105,10 @@ audio { display: block; width: 100%; max-width: 390px; height: 38px; margin-top:
   .closing { padding: 75px 7vw; }
   .site-footer p { order: 3; width: 100%; }
 }
+
+.village-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
