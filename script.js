@@ -1,21 +1,18 @@
-// Filtre senzill per explorar els objectes per categories.
-const filterButtons = document.querySelectorAll(".filter-button");
-const objectCards = document.querySelectorAll(".object-card");
+// Filtres de la col·lecció: mostra només les targetes de la categoria triada.
+const buttons = document.querySelectorAll(".filter-button");
+const cards = document.querySelectorAll(".object-card");
 
-filterButtons.forEach((button) => {
+// Els números dels botons es calculen sols a partir de les targetes.
+buttons.forEach((button) => {
+  const f = button.dataset.filter;
+  const total = f === "tots" ? cards.length : [...cards].filter((c) => c.dataset.category === f).length;
+  button.textContent = `${button.dataset.label} (${total})`;
+
   button.addEventListener("click", () => {
-    const selectedCategory = button.dataset.filter;
-
-    filterButtons.forEach((item) => {
-      const isActive = item === button;
-      item.classList.toggle("active", isActive);
-      item.setAttribute("aria-pressed", String(isActive));
+    buttons.forEach((b) => {
+      b.classList.toggle("active", b === button);
+      b.setAttribute("aria-pressed", String(b === button));
     });
-
-    objectCards.forEach((card) => {
-      const matches = selectedCategory === "Tots" ||
-        card.dataset.category === selectedCategory;
-      card.hidden = !matches;
-    });
+    cards.forEach((c) => { c.hidden = f !== "tots" && c.dataset.category !== f; });
   });
 });

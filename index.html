@@ -4,411 +4,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description"
-    content="El paller d'Antonio Ayala Peña: memòria i vida quotidiana de Sant Vicente de Piedrahita.">
+  <meta name="description" content="El paller d'Antonio Ayala Peña: memòria i vida quotidiana de Sant Vicente de Piedrahita.">
   <title>El paller de Sant Vicente de Piedrahita</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
-    rel="stylesheet">
-  <style>
-    :root {
-      --paper: #f7f5f0;
-      --deep: #eeebe3;
-      --ink: #282a24;
-      --muted: #77766d;
-      --olive: #777b5a;
-      --line: #d9d5ca;
-      --serif: 'Playfair Display', Georgia, serif;
-      --sans: 'DM Sans', Arial, sans-serif
-    }
-
-    * {
-      box-sizing: border-box
-    }
-
-    html {
-      scroll-behavior: smooth
-    }
-
-    body {
-      margin: 0;
-      background: var(--paper);
-      color: var(--ink);
-      font-family: var(--sans);
-      line-height: 1.65
-    }
-
-    a {
-      color: inherit;
-      text-decoration: none
-    }
-
-    .site-header {
-      padding: 20px 7vw;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 25px;
-      border-bottom: 1px solid var(--line)
-    }
-
-    .brand {
-      font-size: .75rem;
-      font-weight: 700;
-      letter-spacing: .13em
-    }
-
-    nav {
-      display: flex;
-      gap: 25px;
-      font-size: .82rem
-    }
-
-    .brand span {
-      color: var(--olive)
-    }
-
-    .hero {
-      padding: 75px 10vw;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 6vw;
-      align-items: center;
-      min-height: 570px
-    }
-
-    .eyebrow,
-    .section-label,
-    .object-category {
-      font-size: .7rem;
-      font-weight: 700;
-      letter-spacing: .15em;
-      color: var(--olive);
-      text-transform: uppercase
-    }
-
-    h1,
-    h2,
-    h3 {
-      font-family: var(--serif);
-      font-weight: 500;
-      line-height: 1.15
-    }
-
-    h1 {
-      font-size: clamp(2.6rem, 5vw, 4.8rem);
-      letter-spacing: -.035em
-    }
-
-    h1 em,
-    h2 em {
-      color: var(--olive)
-    }
-
-    .hero-rule {
-      width: 50px;
-      height: 2px;
-      background: var(--olive);
-      margin: 25px 0
-    }
-
-    .hero-origin,
-    .muted {
-      color: var(--muted);
-      font-size: .88rem
-    }
-
-    .text-link {
-      display: inline-block;
-      margin-top: 25px;
-      border-bottom: 1px solid var(--olive);
-      padding-bottom: 5px;
-      font-size: .85rem
-    }
-
-    .hero-image {
-      position: relative;
-      aspect-ratio: 4/5;
-      max-height: 500px
-    }
-
-    .hero-image img,
-    .village-photo img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: none
-    }
-
-    .photo-placeholder {
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(145deg, #e8e3d8, #d8d2c4);
-      border: 1px solid #d5cfc2;
-      color: #797768;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      text-align: center;
-      padding: 20px;
-      gap: 5px;
-      font-size: .85rem
-    }
-
-    .photo-placeholder small {
-      font-size: .68rem
-    }
-
-    .section {
-      padding: 85px 10vw
-    }
-
-    .intro,
-    .village {
-      background: var(--deep)
-    }
-
-    .two-col {
-      display: grid;
-      grid-template-columns: .7fr 1.5fr;
-      gap: 5vw
-    }
-
-    .intro-copy {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 4vw
-    }
-
-    .intro p,
-    .village p {
-      font-size: .9rem;
-      color: #626258
-    }
-
-    .section-heading {
-      display: flex;
-      justify-content: space-between;
-      align-items: end;
-      gap: 35px
-    }
-
-    .section-heading h2,
-    .village h2 {
-      font-size: clamp(2.2rem, 4vw, 3.7rem)
-    }
-
-    .section-heading>p {
-      max-width: 330px;
-      color: var(--muted);
-      font-size: .9rem
-    }
-
-    .filters {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      margin: 35px 0 28px
-    }
-
-    .filter-button {
-      font: inherit;
-      font-size: .78rem;
-      padding: 9px 15px;
-      border: 1px solid var(--line);
-      border-radius: 30px;
-      background: transparent;
-      cursor: pointer
-    }
-
-    .filter-button.active,
-    .filter-button:hover {
-      background: var(--ink);
-      color: #fffefa;
-      border-color: var(--ink)
-    }
-
-    .object-grid {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 40px 25px
-    }
-
-    .object-card[hidden] {
-      display: none
-    }
-
-    .object-image {
-      position: relative;
-      aspect-ratio: 5/3;
-      overflow: hidden;
-      background: #e8e3d8
-    }
-
-    .object-image img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: none
-    }
-
-    .photo-number {
-      position: absolute;
-      top: 12px;
-      left: 14px;
-      font-size: .7rem
-    }
-
-    .object-info {
-      padding: 20px 3px
-    }
-
-    .object-category {
-      font-size: .64rem;
-      margin-bottom: 8px
-    }
-
-    .object-info h3 {
-      font-size: 1.55rem;
-      margin: 0 0 12px
-    }
-
-    .object-info p:not(.object-category) {
-      font-size: .85rem;
-      color: #626258
-    }
-
-    .object-info .memory {
-      font-size: .78rem;
-      color: #858374;
-      font-style: italic
-    }
-
-    .object-info audio {
-      display: block;
-      width: 100%;
-      margin-top: 15px
-    }
-
-    .village-layout {
-      display: grid;
-      grid-template-columns: .8fr 1.2fr;
-      gap: 7vw;
-      margin-top: 35px
-    }
-
-    .village-photos {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 18px
-    }
-
-    .village-photos figure {
-      margin: 0
-    }
-
-    .village-photos figure:nth-child(2) {
-      margin-top: 45px
-    }
-
-    .village-photo {
-      position: relative;
-      aspect-ratio: 3/4
-    }
-
-    .village-photos figcaption {
-      font-size: .75rem;
-      color: var(--muted);
-      margin-top: 8px
-    }
-
-    .closing {
-      text-align: center;
-      padding: 90px 20px
-    }
-
-    .closing h2 {
-      font-size: clamp(2.3rem, 4vw, 3.8rem)
-    }
-
-    .closing p:last-child {
-      color: var(--muted);
-      font-size: .9rem
-    }
-
-    .site-footer {
-      padding: 25px 7vw;
-      border-top: 1px solid var(--line);
-      display: flex;
-      justify-content: space-between;
-      gap: 20px;
-      align-items: center
-    }
-
-    .site-footer p {
-      font-size: .75rem;
-      color: var(--muted)
-    }
-
-    @media(max-width:760px) {
-      .site-header {
-        align-items: flex-start;
-        flex-direction: column
-      }
-
-      .hero {
-        grid-template-columns: 1fr;
-        padding: 55px 7vw
-      }
-
-      .hero-image {
-        aspect-ratio: 5/3
-      }
-
-      .section {
-        padding: 65px 7vw
-      }
-
-      .two-col,
-      .intro-copy,
-      .village-layout {
-        grid-template-columns: 1fr;
-        gap: 25px
-      }
-
-      .section-heading {
-        align-items: flex-start;
-        flex-direction: column;
-        gap: 5px
-      }
-
-      .site-footer {
-        flex-wrap: wrap
-      }
-    }
-
-    @media(max-width:540px) {
-      nav {
-        gap: 15px;
-        flex-wrap: wrap
-      }
-
-      .object-grid {
-        grid-template-columns: 1fr
-      }
-
-      .village-photos {
-        gap: 12px
-      }
-
-      .village-photos figure:nth-child(2) {
-        margin-top: 25px
-      }
-    }
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -422,14 +24,12 @@
         <h1>El paller de<br><em>Sant Vicente de Piedrahita</em></h1>
         <div class="hero-rule"></div>
         <p>Per <strong>Antonio Ayala Peña</strong></p>
-        <p class="hero-origin">Natural de San Vicente de Piedrahita des de 1943</p><a class="text-link"
-          href="#colleccio">Descobreix la col·lecció ↓</a>
+        <p class="hero-origin">Natural de San Vicente de Piedrahita des de 1943</p>
+        <a class="text-link" href="#colleccio">Descobreix la col·lecció ↓</a>
       </div>
-      <div class="hero-image"><img src="imatges/hero.jpg" alt="El paller"
-          onload="this.style.display='block';this.nextElementSibling.style.display='none'"
-          onerror="this.style.display='none'">
-        <div class="photo-placeholder"><span>Fotografia del paller</span><small>Deseu-la com imatges/paller.jpg</small>
-        </div>
+      <div class="hero-image">
+        <div class="photo-placeholder"><span>Fotografia del paller</span><small>imatges/hero.jpg</small></div>
+        <img src="imatges/hero.jpg" alt="El paller" onerror="this.remove()">
       </div>
     </section>
     <section class="section intro" id="projecte">
@@ -438,12 +38,8 @@
         <div class="intro-copy">
           <h2>Un paller ple d’històries.</h2>
           <div>
-            <p>Al seu paller, Antonio ha anat reunint objectes que formen part de la memòria de Sant Vicente de
-              Piedrahita: eines, estris de casa, instruments, records de les feines d’abans i de les festes populars.
-            </p>
-            <p>Aquest projecte vol obrir les portes d’aquest petit museu i conservar-ne les històries. Cada objecte és
-              una peça del passat; els records d’Antonio ens ajuden a entendre com s’utilitzava i quin lloc ocupava en
-              la vida del poble.</p>
+            <p>Al seu paller, Antonio ha anat reunint objectes que formen part de la memòria de Sant Vicente de Piedrahita: eines, estris de casa, instruments, records de les feines d’abans i de les festes populars.</p>
+            <p>Aquest projecte vol obrir les portes d’aquest petit museu i conservar-ne les històries. Cada objecte és una peça del passat; els records d’Antonio ens ajuden a entendre com s’utilitzava i quin lloc ocupava en la vida del poble.</p>
             <p class="muted"><em>Podeu editar aquest text directament dins de l’HTML.</em></p>
           </div>
         </div>
@@ -455,1406 +51,860 @@
           <div class="section-label">02 · LA COL·LECCIÓ</div>
           <h2>Petits objectes,<br><em>grans històries.</em></h2>
         </div>
-        <p>Exploreu els objectes per temàtiques i descobriu per a què servien, qui els feia servir i què ens expliquen.
-        </p>
+        <p>Exploreu els objectes per temàtiques i descobriu per a què servien, qui els feia servir i què ens expliquen.</p>
       </div>
-      <div class="filters"><button class="filter-button active" data-filter="tots">Tots (80)</button><button
-          class="filter-button" data-filter="casa">A casa (28)</button><button class="filter-button"
-          data-filter="camp">Les feines del camp (30)</button><button class="filter-button" data-filter="poble">La vida
-          al poble (13)</button><button class="filter-button" data-filter="musica">Música i festes (9)</button></div>
+      <div class="filters">
+        <button class="filter-button active" data-filter="tots" data-label="Tots" aria-pressed="true">Tots (83)</button><button class="filter-button" data-filter="casa" data-label="A casa" aria-pressed="false">A casa (29)</button><button class="filter-button" data-filter="camp" data-label="Les feines del camp" aria-pressed="false">Les feines del camp (31)</button><button class="filter-button" data-filter="poble" data-label="La vida al poble" aria-pressed="false">La vida al poble (14)</button><button class="filter-button" data-filter="musica" data-label="Música i festes" aria-pressed="false">Música i festes (9)</button>
+      </div>
       <div class="object-grid">
         <article class="object-card" data-category="casa">
-          <div class="object-image"><img src="imatges/casa-01.jpg" alt="Fotografia de l'objecte 01" loading="lazy"
-              onload="this.style.display='block';this.nextElementSibling.style.display='none'"
-              onerror="this.style.display='none'">
-            <div class="photo-placeholder"><span class="photo-number">01</span><span>Afegiu la
-                fotografia</span><small>imatges/casa-01.jpg</small></div>
-          </div>
+          <div class="object-image"><div class="photo-placeholder"><span class="photo-number">01</span><span>Afegiu la fotografia</span><small>imatges/casa-01.jpg</small></div><img src="imatges/casa-01.jpg" alt="Fotografia de l'objecte 01" loading="lazy" onerror="this.remove()"></div>
           <div class="object-info">
             <p class="object-category">A CASA</p>
             <h3>Nom de l’objecte 01</h3>
             <p>Escriviu aquí què és aquest objecte, per a què servia i com s’utilitzava.</p>
             <p class="memory">Afegiu-hi un record d’Antonio, una anècdota o informació sobre la seva història.</p>
-            <!-- ÀUDIO OPCIONAL: deseu-lo com audio/casa-01.mp3 i traieu els comentaris d'aquest reproductor.
-    <audio controls preload="none"><source src="audio/casa-01.mp3" type="audio/mpeg">El navegador no pot reproduir aquest àudio.</audio>
-    -->
+            <!-- ÀUDIO (fase II): <audio controls preload="none" src="audio/casa-01.mp3"></audio> -->
           </div>
         </article>
         <article class="object-card" data-category="casa">
-          <div class="object-image"><img src="imatges/casa-02.jpg" alt="Fotografia de l'objecte 02" loading="lazy"
-              onload="this.style.display='block';this.nextElementSibling.style.display='none'"
-              onerror="this.style.display='none'">
-            <div class="photo-placeholder"><span class="photo-number">02</span><span>Afegiu la
-                fotografia</span><small>imatges/casa-02.jpg</small></div>
-          </div>
+          <div class="object-image"><div class="photo-placeholder"><span class="photo-number">02</span><span>Afegiu la fotografia</span><small>imatges/casa-02.jpg</small></div><img src="imatges/casa-02.jpg" alt="Fotografia de l'objecte 02" loading="lazy" onerror="this.remove()"></div>
           <div class="object-info">
             <p class="object-category">A CASA</p>
             <h3>Nom de l’objecte 02</h3>
             <p>Escriviu aquí què és aquest objecte, per a què servia i com s’utilitzava.</p>
             <p class="memory">Afegiu-hi un record d’Antonio, una anècdota o informació sobre la seva història.</p>
-            <!-- ÀUDIO OPCIONAL: deseu-lo com audio/casa-02.mp3 i traieu els comentaris d'aquest reproductor.
-    <audio controls preload="none"><source src="audio/casa-02.mp3" type="audio/mpeg">El navegador no pot reproduir aquest àudio.</audio>
-    -->
+            <!-- ÀUDIO (fase II): <audio controls preload="none" src="audio/casa-02.mp3"></audio> -->
           </div>
         </article>
         <article class="object-card" data-category="casa">
-          <div class="object-image"><img src="imatges/casa-03.jpg" alt="Fotografia de l'objecte 03" loading="lazy"
-              onload="this.style.display='block';this.nextElementSibling.style.display='none'"
-              onerror="this.style.display='none'">
-            <div class="photo-placeholder"><span class="photo-number">03</span><span>Afegiu la
-                fotografia</span><small>imatges/casa-03.jpg</small></div>
-          </div>
+          <div class="object-image"><div class="photo-placeholder"><span class="photo-number">03</span><span>Afegiu la fotografia</span><small>imatges/casa-03.jpg</small></div><img src="imatges/casa-03.jpg" alt="Fotografia de l'objecte 03" loading="lazy" onerror="this.remove()"></div>
           <div class="object-info">
             <p class="object-category">A CASA</p>
             <h3>Nom de l’objecte 03</h3>
             <p>Escriviu aquí què és aquest objecte, per a què servia i com s’utilitzava.</p>
             <p class="memory">Afegiu-hi un record d’Antonio, una anècdota o informació sobre la seva història.</p>
-            <!-- ÀUDIO OPCIONAL: deseu-lo com audio/casa-03.mp3 i traieu els comentaris d'aquest reproductor.
-    <audio controls preload="none"><source src="audio/casa-03.mp3" type="audio/mpeg">El navegador no pot reproduir aquest àudio.</audio>
-    -->
+            <!-- ÀUDIO (fase II): <audio controls preload="none" src="audio/casa-03.mp3"></audio> -->
           </div>
         </article>
         <article class="object-card" data-category="casa">
-          <div class="object-image"><img src="imatges/casa-04.jpg" alt="Fotografia de l'objecte 04" loading="lazy"
-              onload="this.style.display='block';this.nextElementSibling.style.display='none'"
-              onerror="this.style.display='none'">
-            <div class="photo-placeholder"><span class="photo-number">04</span><span>Afegiu la
-                fotografia</span><small>imatges/casa-04.jpg</small></div>
-          </div>
+          <div class="object-image"><div class="photo-placeholder"><span class="photo-number">04</span><span>Afegiu la fotografia</span><small>imatges/casa-04.jpg</small></div><img src="imatges/casa-04.jpg" alt="Fotografia de l'objecte 04" loading="lazy" onerror="this.remove()"></div>
           <div class="object-info">
             <p class="object-category">A CASA</p>
             <h3>Nom de l’objecte 04</h3>
             <p>Escriviu aquí què és aquest objecte, per a què servia i com s’utilitzava.</p>
             <p class="memory">Afegiu-hi un record d’Antonio, una anècdota o informació sobre la seva història.</p>
-            <!-- ÀUDIO OPCIONAL: deseu-lo com audio/casa-04.mp3 i traieu els comentaris d'aquest reproductor.
-    <audio controls preload="none"><source src="audio/casa-04.mp3" type="audio/mpeg">El navegador no pot reproduir aquest àudio.</audio>
-    -->
+            <!-- ÀUDIO (fase II): <audio controls preload="none" src="audio/casa-04.mp3"></audio> -->
           </div>
         </article>
         <article class="object-card" data-category="casa">
-          <div class="object-image"><img src="imatges/casa-05.jpg" alt="Fotografia de l'objecte 05" loading="lazy"
-              onload="this.style.display='block';this.nextElementSibling.style.display='none'"
-              onerror="this.style.display='none'">
-            <div class="photo-placeholder"><span class="photo-number">05</span><span>Afegiu la
-                fotografia</span><small>imatges/casa-05.jpg</small></div>
-          </div>
+          <div class="object-image"><div class="photo-placeholder"><span class="photo-number">05</span><span>Afegiu la fotografia</span><small>imatges/casa-05.jpg</small></div><img src="imatges/casa-05.jpg" alt="Fotografia de l'objecte 05" loading="lazy" onerror="this.remove()"></div>
           <div class="object-info">
             <p class="object-category">A CASA</p>
             <h3>Nom de l’objecte 05</h3>
             <p>Escriviu aquí què és aquest objecte, per a què servia i com s’utilitzava.</p>
             <p class="memory">Afegiu-hi un record d’Antonio, una anècdota o informació sobre la seva història.</p>
-            <!-- ÀUDIO OPCIONAL: deseu-lo com audio/casa-05.mp3 i traieu els comentaris d'aquest reproductor.
-    <audio controls preload="none"><source src="audio/casa-05.mp3" type="audio/mpeg">El navegador no pot reproduir aquest àudio.</audio>
-    -->
+            <!-- ÀUDIO (fase II): <audio controls preload="none" src="audio/casa-05.mp3"></audio> -->
           </div>
         </article>
         <article class="object-card" data-category="casa">
-          <div class="object-image"><img src="imatges/casa-06.jpg" alt="Fotografia de l'objecte 06" loading="lazy"
-              onload="this.style.display='block';this.nextElementSibling.style.display='none'"
-              onerror="this.style.display='none'">
-            <div class="photo-placeholder"><span class="photo-number">06</span><span>Afegiu la
-                fotografia</span><small>imatges/casa-06.jpg</small></div>
-          </div>
+          <div class="object-image"><div class="photo-placeholder"><span class="photo-number">06</span><span>Afegiu la fotografia</span><small>imatges/casa-06.jpg</small></div><img src="imatges/casa-06.jpg" alt="Fotografia de l'objecte 06" loading="lazy" onerror="this.remove()"></div>
           <div class="object-info">
             <p class="object-category">A CASA</p>
             <h3>Nom de l’objecte 06</h3>
             <p>Escriviu aquí què és aquest objecte, per a què servia i com s’utilitzava.</p>
             <p class="memory">Afegiu-hi un record d’Antonio, una anècdota o informació sobre la seva història.</p>
-            <!-- ÀUDIO OPCIONAL: deseu-lo com audio/casa-06.mp3 i traieu els comentaris d'aquest reproductor.
-    <audio controls preload="none"><source src="audio/casa-06.mp3" type="audio/mpeg">El navegador no pot reproduir aquest àudio.</audio>
-    -->
+            <!-- ÀUDIO (fase II): <audio controls preload="none" src="audio/casa-06.mp3"></audio> -->
           </div>
         </article>
         <article class="object-card" data-category="casa">
-          <div class="object-image"><img src="imatges/casa-07.jpg" alt="Fotografia de l'objecte 07" loading="lazy"
-              onload="this.style.display='block';this.nextElementSibling.style.display='none'"
-              onerror="this.style.display='none'">
-            <div class="photo-placeholder"><span class="photo-number">07</span><span>Afegiu la
-                fotografia</span><small>imatges/casa-07.jpg</small></div>
-          </div>
+          <div class="object-image"><div class="photo-placeholder"><span class="photo-number">07</span><span>Afegiu la fotografia</span><small>imatges/casa-07.jpg</small></div><img src="imatges/casa-07.jpg" alt="Fotografia de l'objecte 07" loading="lazy" onerror="this.remove()"></div>
           <div class="object-info">
             <p class="object-category">A CASA</p>
             <h3>Nom de l’objecte 07</h3>
             <p>Escriviu aquí què és aquest objecte, per a què servia i com s’utilitzava.</p>
             <p class="memory">Afegiu-hi un record d’Antonio, una anècdota o informació sobre la seva història.</p>
-            <!-- ÀUDIO OPCIONAL: deseu-lo com audio/casa-07.mp3 i traieu els comentaris d'aquest reproductor.
-    <audio controls preload="none"><source src="audio/casa-07.mp3" type="audio/mpeg">El navegador no pot reproduir aquest àudio.</audio>
-    -->
+            <!-- ÀUDIO (fase II): <audio controls preload="none" src="audio/casa-07.mp3"></audio> -->
           </div>
         </article>
         <article class="object-card" data-category="casa">
-          <div class="object-image"><img src="imatges/casa-08.jpg" alt="Fotografia de l'objecte 08" loading="lazy"
-              onload="this.style.display='block';this.nextElementSibling.style.display='none'"
-              onerror="this.style.display='none'">
-            <div class="photo-placeholder"><span class="photo-number">08</span><span>Afegiu la
-                fotografia</span><small>imatges/casa-08.jpg</small></div>
-          </div>
+          <div class="object-image"><div class="photo-placeholder"><span class="photo-number">08</span><span>Afegiu la fotografia</span><small>imatges/casa-08.jpg</small></div><img src="imatges/casa-08.jpg" alt="Fotografia de l'objecte 08" loading="lazy" onerror="this.remove()"></div>
           <div class="object-info">
             <p class="object-category">A CASA</p>
             <h3>Nom de l’objecte 08</h3>
             <p>Escriviu aquí què és aquest objecte, per a què servia i com s’utilitzava.</p>
             <p class="memory">Afegiu-hi un record d’Antonio, una anècdota o informació sobre la seva història.</p>
-            <!-- ÀUDIO OPCIONAL: deseu-lo com audio/casa-08.mp3 i traieu els comentaris d'aquest reproductor.
-    <audio controls preload="none"><source src="audio/casa-08.mp3" type="audio/mpeg">El navegador no pot reproduir aquest àudio.</audio>
-    -->
+            <!-- ÀUDIO (fase II): <audio controls preload="none" src="audio/casa-08.mp3"></audio> -->
           </div>
         </article>
         <article class="object-card" data-category="casa">
-          <div class="object-image"><img src="imatges/casa-09.jpg" alt="Fotografia de l'objecte 09" loading="lazy"
-              onload="this.style.display='block';this.nextElementSibling.style.display='none'"
-              onerror="this.style.display='none'">
-            <div class="photo-placeholder"><span class="photo-number">09</span><span>Afegiu la
-                fotografia</span><small>imatges/casa-09.jpg</small></div>
-          </div>
+          <div class="object-image"><div class="photo-placeholder"><span class="photo-number">09</span><span>Afegiu la fotografia</span><small>imatges/casa-09.jpg</small></div><img src="imatges/casa-09.jpg" alt="Fotografia de l'objecte 09" loading="lazy" onerror="this.remove()"></div>
           <div class="object-info">
             <p class="object-category">A CASA</p>
             <h3>Nom de l’objecte 09</h3>
             <p>Escriviu aquí què és aquest objecte, per a què servia i com s’utilitzava.</p>
             <p class="memory">Afegiu-hi un record d’Antonio, una anècdota o informació sobre la seva història.</p>
-            <!-- ÀUDIO OPCIONAL: deseu-lo com audio/casa-09.mp3 i traieu els comentaris d'aquest reproductor.
-    <audio controls preload="none"><source src="audio/casa-09.mp3" type="audio/mpeg">El navegador no pot reproduir aquest àudio.</audio>
-    -->
+            <!-- ÀUDIO (fase II): <audio controls preload="none" src="audio/casa-09.mp3"></audio> -->
           </div>
         </article>
         <article class="object-card" data-category="casa">
-          <div class="object-image"><img src="imatges/casa-10.jpg" alt="Fotografia de l'objecte 10" loading="lazy"
-              onload="this.style.display='block';this.nextElementSibling.style.display='none'"
-              onerror="this.style.display='none'">
-            <div class="photo-placeholder"><span class="photo-number">10</span><span>Afegiu la
-                fotografia</span><small>imatges/casa-10.jpg</small></div>
-          </div>
+          <div class="object-image"><div class="photo-placeholder"><span class="photo-number">10</span><span>Afegiu la fotografia</span><small>imatges/casa-10.jpg</small></div><img src="imatges/casa-10.jpg" alt="Fotografia de l'objecte 10" loading="lazy" onerror="this.remove()"></div>
           <div class="object-info">
             <p class="object-category">A CASA</p>
             <h3>Nom de l’objecte 10</h3>
             <p>Escriviu aquí què és aquest objecte, per a què servia i com s’utilitzava.</p>
             <p class="memory">Afegiu-hi un record d’Antonio, una anècdota o informació sobre la seva història.</p>
-            <!-- ÀUDIO OPCIONAL: deseu-lo com audio/casa-10.mp3 i traieu els comentaris d'aquest reproductor.
-    <audio controls preload="none"><source src="audio/casa-10.mp3" type="audio/mpeg">El navegador no pot reproduir aquest àudio.</audio>
-    -->
+            <!-- ÀUDIO (fase II): <audio controls preload="none" src="audio/casa-10.mp3"></audio> -->
           </div>
         </article>
         <article class="object-card" data-category="casa">
-          <div class="object-image"><img src="imatges/casa-11.jpg" alt="Fotografia de l'objecte 11" loading="lazy"
-              onload="this.style.display='block';this.nextElementSibling.style.display='none'"
-              onerror="this.style.display='none'">
-            <div class="photo-placeholder"><span class="photo-number">11</span><span>Afegiu la
-                fotografia</span><small>imatges/casa-11.jpg</small></div>
-          </div>
+          <div class="object-image"><div class="photo-placeholder"><span class="photo-number">11</span><span>Afegiu la fotografia</span><small>imatges/casa-11.jpg</small></div><img src="imatges/casa-11.jpg" alt="Fotografia de l'objecte 11" loading="lazy" onerror="this.remove()"></div>
           <div class="object-info">
             <p class="object-category">A CASA</p>
             <h3>Nom de l’objecte 11</h3>
             <p>Escriviu aquí què és aquest objecte, per a què servia i com s’utilitzava.</p>
             <p class="memory">Afegiu-hi un record d’Antonio, una anècdota o informació sobre la seva història.</p>
-            <!-- ÀUDIO OPCIONAL: deseu-lo com audio/casa-11.mp3 i traieu els comentaris d'aquest reproductor.
-    <audio controls preload="none"><source src="audio/casa-11.mp3" type="audio/mpeg">El navegador no pot reproduir aquest àudio.</audio>
-    -->
+            <!-- ÀUDIO (fase II): <audio controls preload="none" src="audio/casa-11.mp3"></audio> -->
           </div>
         </article>
         <article class="object-card" data-category="casa">
-          <div class="object-image"><img src="imatges/casa-12.jpg" alt="Fotografia de l'objecte 12" loading="lazy"
-              onload="this.style.display='block';this.nextElementSibling.style.display='none'"
-              onerror="this.style.display='none'">
-            <div class="photo-placeholder"><span class="photo-number">12</span><span>Afegiu la
-                fotografia</span><small>imatges/casa-12.jpg</small></div>
-          </div>
+          <div class="object-image"><div class="photo-placeholder"><span class="photo-number">12</span><span>Afegiu la fotografia</span><small>imatges/casa-12.jpg</small></div><img src="imatges/casa-12.jpg" alt="Fotografia de l'objecte 12" loading="lazy" onerror="this.remove()"></div>
           <div class="object-info">
             <p class="object-category">A CASA</p>
             <h3>Nom de l’objecte 12</h3>
             <p>Escriviu aquí què és aquest objecte, per a què servia i com s’utilitzava.</p>
             <p class="memory">Afegiu-hi un record d’Antonio, una anècdota o informació sobre la seva història.</p>
-            <!-- ÀUDIO OPCIONAL: deseu-lo com audio/casa-12.mp3 i traieu els comentaris d'aquest reproductor.
-    <audio controls preload="none"><source src="audio/casa-12.mp3" type="audio/mpeg">El navegador no pot reproduir aquest àudio.</audio>
-    -->
+            <!-- ÀUDIO (fase II): <audio controls preload="none" src="audio/casa-12.mp3"></audio> -->
           </div>
         </article>
         <article class="object-card" data-category="casa">
-          <div class="object-image"><img src="imatges/casa-13.jpg" alt="Fotografia de l'objecte 13" loading="lazy"
-              onload="this.style.display='block';this.nextElementSibling.style.display='none'"
-              onerror="this.style.display='none'">
-            <div class="photo-placeholder"><span class="photo-number">13</span><span>Afegiu la
-                fotografia</span><small>imatges/casa-13.jpg</small></div>
-          </div>
+          <div class="object-image"><div class="photo-placeholder"><span class="photo-number">13</span><span>Afegiu la fotografia</span><small>imatges/casa-13.jpg</small></div><img src="imatges/casa-13.jpg" alt="Fotografia de l'objecte 13" loading="lazy" onerror="this.remove()"></div>
           <div class="object-info">
             <p class="object-category">A CASA</p>
             <h3>Nom de l’objecte 13</h3>
             <p>Escriviu aquí què és aquest objecte, per a què servia i com s’utilitzava.</p>
             <p class="memory">Afegiu-hi un record d’Antonio, una anècdota o informació sobre la seva història.</p>
-            <!-- ÀUDIO OPCIONAL: deseu-lo com audio/casa-13.mp3 i traieu els comentaris d'aquest reproductor.
-    <audio controls preload="none"><source src="audio/casa-13.mp3" type="audio/mpeg">El navegador no pot reproduir aquest àudio.</audio>
-    -->
+            <!-- ÀUDIO (fase II): <audio controls preload="none" src="audio/casa-13.mp3"></audio> -->
           </div>
         </article>
         <article class="object-card" data-category="casa">
-          <div class="object-image"><img src="imatges/casa-14.jpg" alt="Fotografia de l'objecte 14" loading="lazy"
-              onload="this.style.display='block';this.nextElementSibling.style.display='none'"
-              onerror="this.style.display='none'">
-            <div class="photo-placeholder"><span class="photo-number">14</span><span>Afegiu la
-                fotografia</span><small>imatges/casa-14.jpg</small></div>
-          </div>
+          <div class="object-image"><div class="photo-placeholder"><span class="photo-number">14</span><span>Afegiu la fotografia</span><small>imatges/casa-14.jpg</small></div><img src="imatges/casa-14.jpg" alt="Fotografia de l'objecte 14" loading="lazy" onerror="this.remove()"></div>
           <div class="object-info">
             <p class="object-category">A CASA</p>
             <h3>Nom de l’objecte 14</h3>
             <p>Escriviu aquí què és aquest objecte, per a què servia i com s’utilitzava.</p>
             <p class="memory">Afegiu-hi un record d’Antonio, una anècdota o informació sobre la seva història.</p>
-            <!-- ÀUDIO OPCIONAL: deseu-lo com audio/casa-14.mp3 i traieu els comentaris d'aquest reproductor.
-    <audio controls preload="none"><source src="audio/casa-14.mp3" type="audio/mpeg">El navegador no pot reproduir aquest àudio.</audio>
-    -->
+            <!-- ÀUDIO (fase II): <audio controls preload="none" src="audio/casa-14.mp3"></audio> -->
           </div>
         </article>
         <article class="object-card" data-category="casa">
-          <div class="object-image"><img src="imatges/casa-15.jpg" alt="Fotografia de l'objecte 15" loading="lazy"
-              onload="this.style.display='block';this.nextElementSibling.style.display='none'"
-              onerror="this.style.display='none'">
-            <div class="photo-placeholder"><span class="photo-number">15</span><span>Afegiu la
-                fotografia</span><small>imatges/casa-15.jpg</small></div>
-          </div>
+          <div class="object-image"><div class="photo-placeholder"><span class="photo-number">15</span><span>Afegiu la fotografia</span><small>imatges/casa-15.jpg</small></div><img src="imatges/casa-15.jpg" alt="Fotografia de l'objecte 15" loading="lazy" onerror="this.remove()"></div>
           <div class="object-info">
             <p class="object-category">A CASA</p>
             <h3>Nom de l’objecte 15</h3>
             <p>Escriviu aquí què és aquest objecte, per a què servia i com s’utilitzava.</p>
             <p class="memory">Afegiu-hi un record d’Antonio, una anècdota o informació sobre la seva història.</p>
-            <!-- ÀUDIO OPCIONAL: deseu-lo com audio/casa-15.mp3 i traieu els comentaris d'aquest reproductor.
-    <audio controls preload="none"><source src="audio/casa-15.mp3" type="audio/mpeg">El navegador no pot reproduir aquest àudio.</audio>
-    -->
+            <!-- ÀUDIO (fase II): <audio controls preload="none" src="audio/casa-15.mp3"></audio> -->
           </div>
         </article>
         <article class="object-card" data-category="casa">
-          <div class="object-image"><img src="imatges/casa-16.jpg" alt="Fotografia de l'objecte 16" loading="lazy"
-              onload="this.style.display='block';this.nextElementSibling.style.display='none'"
-              onerror="this.style.display='none'">
-            <div class="photo-placeholder"><span class="photo-number">16</span><span>Afegiu la
-                fotografia</span><small>imatges/casa-16.jpg</small></div>
-          </div>
+          <div class="object-image"><div class="photo-placeholder"><span class="photo-number">16</span><span>Afegiu la fotografia</span><small>imatges/casa-16.jpg</small></div><img src="imatges/casa-16.jpg" alt="Fotografia de l'objecte 16" loading="lazy" onerror="this.remove()"></div>
           <div class="object-info">
             <p class="object-category">A CASA</p>
             <h3>Nom de l’objecte 16</h3>
             <p>Escriviu aquí què és aquest objecte, per a què servia i com s’utilitzava.</p>
             <p class="memory">Afegiu-hi un record d’Antonio, una anècdota o informació sobre la seva història.</p>
-            <!-- ÀUDIO OPCIONAL: deseu-lo com audio/casa-16.mp3 i traieu els comentaris d'aquest reproductor.
-    <audio controls preload="none"><source src="audio/casa-16.mp3" type="audio/mpeg">El navegador no pot reproduir aquest àudio.</audio>
-    -->
+            <!-- ÀUDIO (fase II): <audio controls preload="none" src="audio/casa-16.mp3"></audio> -->
           </div>
         </article>
         <article class="object-card" data-category="casa">
-          <div class="object-image"><img src="imatges/casa-17.jpg" alt="Fotografia de l'objecte 17" loading="lazy"
-              onload="this.style.display='block';this.nextElementSibling.style.display='none'"
-              onerror="this.style.display='none'">
-            <div class="photo-placeholder"><span class="photo-number">17</span><span>Afegiu la
-                fotografia</span><small>imatges/casa-17.jpg</small></div>
-          </div>
+          <div class="object-image"><div class="photo-placeholder"><span class="photo-number">17</span><span>Afegiu la fotografia</span><small>imatges/casa-17.jpg</small></div><img src="imatges/casa-17.jpg" alt="Fotografia de l'objecte 17" loading="lazy" onerror="this.remove()"></div>
           <div class="object-info">
             <p class="object-category">A CASA</p>
             <h3>Nom de l’objecte 17</h3>
             <p>Escriviu aquí què és aquest objecte, per a què servia i com s’utilitzava.</p>
             <p class="memory">Afegiu-hi un record d’Antonio, una anècdota o informació sobre la seva història.</p>
-            <!-- ÀUDIO OPCIONAL: deseu-lo com audio/casa-17.mp3 i traieu els comentaris d'aquest reproductor.
-    <audio controls preload="none"><source src="audio/casa-17.mp3" type="audio/mpeg">El navegador no pot reproduir aquest àudio.</audio>
-    -->
+            <!-- ÀUDIO (fase II): <audio controls preload="none" src="audio/casa-17.mp3"></audio> -->
           </div>
         </article>
         <article class="object-card" data-category="casa">
-          <div class="object-image"><img src="imatges/casa-18.jpg" alt="Fotografia de l'objecte 18" loading="lazy"
-              onload="this.style.display='block';this.nextElementSibling.style.display='none'"
-              onerror="this.style.display='none'">
-            <div class="photo-placeholder"><span class="photo-number">18</span><span>Afegiu la
-                fotografia</span><small>imatges/casa-18.jpg</small></div>
-          </div>
+          <div class="object-image"><div class="photo-placeholder"><span class="photo-number">18</span><span>Afegiu la fotografia</span><small>imatges/casa-18.jpg</small></div><img src="imatges/casa-18.jpg" alt="Fotografia de l'objecte 18" loading="lazy" onerror="this.remove()"></div>
           <div class="object-info">
             <p class="object-category">A CASA</p>
             <h3>Nom de l’objecte 18</h3>
             <p>Escriviu aquí què és aquest objecte, per a què servia i com s’utilitzava.</p>
             <p class="memory">Afegiu-hi un record d’Antonio, una anècdota o informació sobre la seva història.</p>
-            <!-- ÀUDIO OPCIONAL: deseu-lo com audio/casa-18.mp3 i traieu els comentaris d'aquest reproductor.
-    <audio controls preload="none"><source src="audio/casa-18.mp3" type="audio/mpeg">El navegador no pot reproduir aquest àudio.</audio>
-    -->
+            <!-- ÀUDIO (fase II): <audio controls preload="none" src="audio/casa-18.mp3"></audio> -->
           </div>
         </article>
         <article class="object-card" data-category="casa">
-          <div class="object-image"><img src="imatges/casa-19.jpg" alt="Fotografia de l'objecte 19" loading="lazy"
-              onload="this.style.display='block';this.nextElementSibling.style.display='none'"
-              onerror="this.style.display='none'">
-            <div class="photo-placeholder"><span class="photo-number">19</span><span>Afegiu la
-                fotografia</span><small>imatges/casa-19.jpg</small></div>
-          </div>
+          <div class="object-image"><div class="photo-placeholder"><span class="photo-number">19</span><span>Afegiu la fotografia</span><small>imatges/casa-19.jpg</small></div><img src="imatges/casa-19.jpg" alt="Fotografia de l'objecte 19" loading="lazy" onerror="this.remove()"></div>
           <div class="object-info">
             <p class="object-category">A CASA</p>
             <h3>Nom de l’objecte 19</h3>
             <p>Escriviu aquí què és aquest objecte, per a què servia i com s’utilitzava.</p>
             <p class="memory">Afegiu-hi un record d’Antonio, una anècdota o informació sobre la seva història.</p>
-            <!-- ÀUDIO OPCIONAL: deseu-lo com audio/casa-19.mp3 i traieu els comentaris d'aquest reproductor.
-    <audio controls preload="none"><source src="audio/casa-19.mp3" type="audio/mpeg">El navegador no pot reproduir aquest àudio.</audio>
-    -->
+            <!-- ÀUDIO (fase II): <audio controls preload="none" src="audio/casa-19.mp3"></audio> -->
           </div>
         </article>
         <article class="object-card" data-category="casa">
-          <div class="object-image"><img src="imatges/casa-20.jpg" alt="Fotografia de l'objecte 20" loading="lazy"
-              onload="this.style.display='block';this.nextElementSibling.style.display='none'"
-              onerror="this.style.display='none'">
-            <div class="photo-placeholder"><span class="photo-number">20</span><span>Afegiu la
-                fotografia</span><small>imatges/casa-20.jpg</small></div>
-          </div>
+          <div class="object-image"><div class="photo-placeholder"><span class="photo-number">20</span><span>Afegiu la fotografia</span><small>imatges/casa-20.jpg</small></div><img src="imatges/casa-20.jpg" alt="Fotografia de l'objecte 20" loading="lazy" onerror="this.remove()"></div>
           <div class="object-info">
             <p class="object-category">A CASA</p>
             <h3>Nom de l’objecte 20</h3>
             <p>Escriviu aquí què és aquest objecte, per a què servia i com s’utilitzava.</p>
             <p class="memory">Afegiu-hi un record d’Antonio, una anècdota o informació sobre la seva història.</p>
-            <!-- ÀUDIO OPCIONAL: deseu-lo com audio/casa-20.mp3 i traieu els comentaris d'aquest reproductor.
-    <audio controls preload="none"><source src="audio/casa-20.mp3" type="audio/mpeg">El navegador no pot reproduir aquest àudio.</audio>
-    -->
+            <!-- ÀUDIO (fase II): <audio controls preload="none" src="audio/casa-20.mp3"></audio> -->
           </div>
         </article>
         <article class="object-card" data-category="casa">
-          <div class="object-image"><img src="imatges/casa-21.jpg" alt="Fotografia de l'objecte 21" loading="lazy"
-              onload="this.style.display='block';this.nextElementSibling.style.display='none'"
-              onerror="this.style.display='none'">
-            <div class="photo-placeholder"><span class="photo-number">21</span><span>Afegiu la
-                fotografia</span><small>imatges/casa-21.jpg</small></div>
-          </div>
+          <div class="object-image"><div class="photo-placeholder"><span class="photo-number">21</span><span>Afegiu la fotografia</span><small>imatges/casa-21.jpg</small></div><img src="imatges/casa-21.jpg" alt="Fotografia de l'objecte 21" loading="lazy" onerror="this.remove()"></div>
           <div class="object-info">
             <p class="object-category">A CASA</p>
             <h3>Nom de l’objecte 21</h3>
             <p>Escriviu aquí què és aquest objecte, per a què servia i com s’utilitzava.</p>
             <p class="memory">Afegiu-hi un record d’Antonio, una anècdota o informació sobre la seva història.</p>
-            <!-- ÀUDIO OPCIONAL: deseu-lo com audio/casa-21.mp3 i traieu els comentaris d'aquest reproductor.
-    <audio controls preload="none"><source src="audio/casa-21.mp3" type="audio/mpeg">El navegador no pot reproduir aquest àudio.</audio>
-    -->
+            <!-- ÀUDIO (fase II): <audio controls preload="none" src="audio/casa-21.mp3"></audio> -->
           </div>
         </article>
         <article class="object-card" data-category="casa">
-          <div class="object-image"><img src="imatges/casa-22.jpg" alt="Fotografia de l'objecte 22" loading="lazy"
-              onload="this.style.display='block';this.nextElementSibling.style.display='none'"
-              onerror="this.style.display='none'">
-            <div class="photo-placeholder"><span class="photo-number">22</span><span>Afegiu la
-                fotografia</span><small>imatges/casa-22.jpg</small></div>
-          </div>
+          <div class="object-image"><div class="photo-placeholder"><span class="photo-number">22</span><span>Afegiu la fotografia</span><small>imatges/casa-22.jpg</small></div><img src="imatges/casa-22.jpg" alt="Fotografia de l'objecte 22" loading="lazy" onerror="this.remove()"></div>
           <div class="object-info">
             <p class="object-category">A CASA</p>
             <h3>Nom de l’objecte 22</h3>
             <p>Escriviu aquí què és aquest objecte, per a què servia i com s’utilitzava.</p>
             <p class="memory">Afegiu-hi un record d’Antonio, una anècdota o informació sobre la seva història.</p>
-            <!-- ÀUDIO OPCIONAL: deseu-lo com audio/casa-22.mp3 i traieu els comentaris d'aquest reproductor.
-    <audio controls preload="none"><source src="audio/casa-22.mp3" type="audio/mpeg">El navegador no pot reproduir aquest àudio.</audio>
-    -->
+            <!-- ÀUDIO (fase II): <audio controls preload="none" src="audio/casa-22.mp3"></audio> -->
           </div>
         </article>
         <article class="object-card" data-category="casa">
-          <div class="object-image"><img src="imatges/casa-23.jpg" alt="Fotografia de l'objecte 23" loading="lazy"
-              onload="this.style.display='block';this.nextElementSibling.style.display='none'"
-              onerror="this.style.display='none'">
-            <div class="photo-placeholder"><span class="photo-number">23</span><span>Afegiu la
-                fotografia</span><small>imatges/casa-23.jpg</small></div>
-          </div>
+          <div class="object-image"><div class="photo-placeholder"><span class="photo-number">23</span><span>Afegiu la fotografia</span><small>imatges/casa-23.jpg</small></div><img src="imatges/casa-23.jpg" alt="Fotografia de l'objecte 23" loading="lazy" onerror="this.remove()"></div>
           <div class="object-info">
             <p class="object-category">A CASA</p>
             <h3>Nom de l’objecte 23</h3>
             <p>Escriviu aquí què és aquest objecte, per a què servia i com s’utilitzava.</p>
             <p class="memory">Afegiu-hi un record d’Antonio, una anècdota o informació sobre la seva història.</p>
-            <!-- ÀUDIO OPCIONAL: deseu-lo com audio/casa-23.mp3 i traieu els comentaris d'aquest reproductor.
-    <audio controls preload="none"><source src="audio/casa-23.mp3" type="audio/mpeg">El navegador no pot reproduir aquest àudio.</audio>
-    -->
+            <!-- ÀUDIO (fase II): <audio controls preload="none" src="audio/casa-23.mp3"></audio> -->
           </div>
         </article>
         <article class="object-card" data-category="casa">
-          <div class="object-image"><img src="imatges/casa-24.jpg" alt="Fotografia de l'objecte 24" loading="lazy"
-              onload="this.style.display='block';this.nextElementSibling.style.display='none'"
-              onerror="this.style.display='none'">
-            <div class="photo-placeholder"><span class="photo-number">24</span><span>Afegiu la
-                fotografia</span><small>imatges/casa-24.jpg</small></div>
-          </div>
+          <div class="object-image"><div class="photo-placeholder"><span class="photo-number">24</span><span>Afegiu la fotografia</span><small>imatges/casa-24.jpg</small></div><img src="imatges/casa-24.jpg" alt="Fotografia de l'objecte 24" loading="lazy" onerror="this.remove()"></div>
           <div class="object-info">
             <p class="object-category">A CASA</p>
             <h3>Nom de l’objecte 24</h3>
             <p>Escriviu aquí què és aquest objecte, per a què servia i com s’utilitzava.</p>
             <p class="memory">Afegiu-hi un record d’Antonio, una anècdota o informació sobre la seva història.</p>
-            <!-- ÀUDIO OPCIONAL: deseu-lo com audio/casa-24.mp3 i traieu els comentaris d'aquest reproductor.
-    <audio controls preload="none"><source src="audio/casa-24.mp3" type="audio/mpeg">El navegador no pot reproduir aquest àudio.</audio>
-    -->
+            <!-- ÀUDIO (fase II): <audio controls preload="none" src="audio/casa-24.mp3"></audio> -->
           </div>
         </article>
         <article class="object-card" data-category="casa">
-          <div class="object-image"><img src="imatges/casa-25.jpg" alt="Fotografia de l'objecte 25" loading="lazy"
-              onload="this.style.display='block';this.nextElementSibling.style.display='none'"
-              onerror="this.style.display='none'">
-            <div class="photo-placeholder"><span class="photo-number">25</span><span>Afegiu la
-                fotografia</span><small>imatges/casa-25.jpg</small></div>
-          </div>
+          <div class="object-image"><div class="photo-placeholder"><span class="photo-number">25</span><span>Afegiu la fotografia</span><small>imatges/casa-25.jpg</small></div><img src="imatges/casa-25.jpg" alt="Fotografia de l'objecte 25" loading="lazy" onerror="this.remove()"></div>
           <div class="object-info">
             <p class="object-category">A CASA</p>
             <h3>Nom de l’objecte 25</h3>
             <p>Escriviu aquí què és aquest objecte, per a què servia i com s’utilitzava.</p>
             <p class="memory">Afegiu-hi un record d’Antonio, una anècdota o informació sobre la seva història.</p>
-            <!-- ÀUDIO OPCIONAL: deseu-lo com audio/casa-25.mp3 i traieu els comentaris d'aquest reproductor.
-    <audio controls preload="none"><source src="audio/casa-25.mp3" type="audio/mpeg">El navegador no pot reproduir aquest àudio.</audio>
-    -->
+            <!-- ÀUDIO (fase II): <audio controls preload="none" src="audio/casa-25.mp3"></audio> -->
           </div>
         </article>
         <article class="object-card" data-category="casa">
-          <div class="object-image"><img src="imatges/casa-26.jpg" alt="Fotografia de l'objecte 26" loading="lazy"
-              onload="this.style.display='block';this.nextElementSibling.style.display='none'"
-              onerror="this.style.display='none'">
-            <div class="photo-placeholder"><span class="photo-number">26</span><span>Afegiu la
-                fotografia</span><small>imatges/casa-26.jpg</small></div>
-          </div>
+          <div class="object-image"><div class="photo-placeholder"><span class="photo-number">26</span><span>Afegiu la fotografia</span><small>imatges/casa-26.jpg</small></div><img src="imatges/casa-26.jpg" alt="Fotografia de l'objecte 26" loading="lazy" onerror="this.remove()"></div>
           <div class="object-info">
             <p class="object-category">A CASA</p>
             <h3>Nom de l’objecte 26</h3>
             <p>Escriviu aquí què és aquest objecte, per a què servia i com s’utilitzava.</p>
             <p class="memory">Afegiu-hi un record d’Antonio, una anècdota o informació sobre la seva història.</p>
-            <!-- ÀUDIO OPCIONAL: deseu-lo com audio/casa-26.mp3 i traieu els comentaris d'aquest reproductor.
-    <audio controls preload="none"><source src="audio/casa-26.mp3" type="audio/mpeg">El navegador no pot reproduir aquest àudio.</audio>
-    -->
+            <!-- ÀUDIO (fase II): <audio controls preload="none" src="audio/casa-26.mp3"></audio> -->
           </div>
         </article>
         <article class="object-card" data-category="casa">
-          <div class="object-image"><img src="imatges/casa-27.jpg" alt="Fotografia de l'objecte 27" loading="lazy"
-              onload="this.style.display='block';this.nextElementSibling.style.display='none'"
-              onerror="this.style.display='none'">
-            <div class="photo-placeholder"><span class="photo-number">27</span><span>Afegiu la
-                fotografia</span><small>imatges/casa-27.jpg</small></div>
-          </div>
+          <div class="object-image"><div class="photo-placeholder"><span class="photo-number">27</span><span>Afegiu la fotografia</span><small>imatges/casa-27.jpg</small></div><img src="imatges/casa-27.jpg" alt="Fotografia de l'objecte 27" loading="lazy" onerror="this.remove()"></div>
           <div class="object-info">
             <p class="object-category">A CASA</p>
             <h3>Nom de l’objecte 27</h3>
             <p>Escriviu aquí què és aquest objecte, per a què servia i com s’utilitzava.</p>
             <p class="memory">Afegiu-hi un record d’Antonio, una anècdota o informació sobre la seva història.</p>
-            <!-- ÀUDIO OPCIONAL: deseu-lo com audio/casa-27.mp3 i traieu els comentaris d'aquest reproductor.
-    <audio controls preload="none"><source src="audio/casa-27.mp3" type="audio/mpeg">El navegador no pot reproduir aquest àudio.</audio>
-    -->
+            <!-- ÀUDIO (fase II): <audio controls preload="none" src="audio/casa-27.mp3"></audio> -->
           </div>
         </article>
         <article class="object-card" data-category="casa">
-          <div class="object-image"><img src="imatges/casa-28.jpg" alt="Fotografia de l'objecte 28" loading="lazy"
-              onload="this.style.display='block';this.nextElementSibling.style.display='none'"
-              onerror="this.style.display='none'">
-            <div class="photo-placeholder"><span class="photo-number">28</span><span>Afegiu la
-                fotografia</span><small>imatges/casa-28.jpg</small></div>
-          </div>
+          <div class="object-image"><div class="photo-placeholder"><span class="photo-number">28</span><span>Afegiu la fotografia</span><small>imatges/casa-28.jpg</small></div><img src="imatges/casa-28.jpg" alt="Fotografia de l'objecte 28" loading="lazy" onerror="this.remove()"></div>
           <div class="object-info">
             <p class="object-category">A CASA</p>
             <h3>Nom de l’objecte 28</h3>
             <p>Escriviu aquí què és aquest objecte, per a què servia i com s’utilitzava.</p>
             <p class="memory">Afegiu-hi un record d’Antonio, una anècdota o informació sobre la seva història.</p>
-            <!-- ÀUDIO OPCIONAL: deseu-lo com audio/casa-28.mp3 i traieu els comentaris d'aquest reproductor.
-    <audio controls preload="none"><source src="audio/casa-28.mp3" type="audio/mpeg">El navegador no pot reproduir aquest àudio.</audio>
-    -->
+            <!-- ÀUDIO (fase II): <audio controls preload="none" src="audio/casa-28.mp3"></audio> -->
+          </div>
+        </article>
+        <article class="object-card" data-category="casa">
+          <div class="object-image"><div class="photo-placeholder"><span class="photo-number">29</span><span>Afegiu la fotografia</span><small>imatges/casa-29.jpg</small></div><img src="imatges/casa-29.jpg" alt="Fotografia de l'objecte 29" loading="lazy" onerror="this.remove()"></div>
+          <div class="object-info">
+            <p class="object-category">A CASA</p>
+            <h3>Nom de l’objecte 29</h3>
+            <p>Escriviu aquí què és aquest objecte, per a què servia i com s’utilitzava.</p>
+            <p class="memory">Afegiu-hi un record d’Antonio, una anècdota o informació sobre la seva història.</p>
+            <!-- ÀUDIO (fase II): <audio controls preload="none" src="audio/casa-29.mp3"></audio> -->
           </div>
         </article>
         <article class="object-card" data-category="camp">
-          <div class="object-image"><img src="imatges/camp-01.jpg" alt="Fotografia de l'objecte 01" loading="lazy"
-              onload="this.style.display='block';this.nextElementSibling.style.display='none'"
-              onerror="this.style.display='none'">
-            <div class="photo-placeholder"><span class="photo-number">29</span><span>Afegiu la
-                fotografia</span><small>imatges/camp-01.jpg</small></div>
-          </div>
+          <div class="object-image"><div class="photo-placeholder"><span class="photo-number">30</span><span>Afegiu la fotografia</span><small>imatges/camp-01.jpg</small></div><img src="imatges/camp-01.jpg" alt="Fotografia de l'objecte 01" loading="lazy" onerror="this.remove()"></div>
           <div class="object-info">
             <p class="object-category">LES FEINES DEL CAMP</p>
             <h3>Nom de l’objecte 01</h3>
             <p>Escriviu aquí què és aquest objecte, per a què servia i com s’utilitzava.</p>
             <p class="memory">Afegiu-hi un record d’Antonio, una anècdota o informació sobre la seva història.</p>
-            <!-- ÀUDIO OPCIONAL: deseu-lo com audio/camp-01.mp3 i traieu els comentaris d'aquest reproductor.
-    <audio controls preload="none"><source src="audio/camp-01.mp3" type="audio/mpeg">El navegador no pot reproduir aquest àudio.</audio>
-    -->
+            <!-- ÀUDIO (fase II): <audio controls preload="none" src="audio/camp-01.mp3"></audio> -->
           </div>
         </article>
         <article class="object-card" data-category="camp">
-          <div class="object-image"><img src="imatges/camp-02.jpg" alt="Fotografia de l'objecte 02" loading="lazy"
-              onload="this.style.display='block';this.nextElementSibling.style.display='none'"
-              onerror="this.style.display='none'">
-            <div class="photo-placeholder"><span class="photo-number">30</span><span>Afegiu la
-                fotografia</span><small>imatges/camp-02.jpg</small></div>
-          </div>
+          <div class="object-image"><div class="photo-placeholder"><span class="photo-number">31</span><span>Afegiu la fotografia</span><small>imatges/camp-02.jpg</small></div><img src="imatges/camp-02.jpg" alt="Fotografia de l'objecte 02" loading="lazy" onerror="this.remove()"></div>
           <div class="object-info">
             <p class="object-category">LES FEINES DEL CAMP</p>
             <h3>Nom de l’objecte 02</h3>
             <p>Escriviu aquí què és aquest objecte, per a què servia i com s’utilitzava.</p>
             <p class="memory">Afegiu-hi un record d’Antonio, una anècdota o informació sobre la seva història.</p>
-            <!-- ÀUDIO OPCIONAL: deseu-lo com audio/camp-02.mp3 i traieu els comentaris d'aquest reproductor.
-    <audio controls preload="none"><source src="audio/camp-02.mp3" type="audio/mpeg">El navegador no pot reproduir aquest àudio.</audio>
-    -->
+            <!-- ÀUDIO (fase II): <audio controls preload="none" src="audio/camp-02.mp3"></audio> -->
           </div>
         </article>
         <article class="object-card" data-category="camp">
-          <div class="object-image"><img src="imatges/camp-03.jpg" alt="Fotografia de l'objecte 03" loading="lazy"
-              onload="this.style.display='block';this.nextElementSibling.style.display='none'"
-              onerror="this.style.display='none'">
-            <div class="photo-placeholder"><span class="photo-number">31</span><span>Afegiu la
-                fotografia</span><small>imatges/camp-03.jpg</small></div>
-          </div>
+          <div class="object-image"><div class="photo-placeholder"><span class="photo-number">32</span><span>Afegiu la fotografia</span><small>imatges/camp-03.jpg</small></div><img src="imatges/camp-03.jpg" alt="Fotografia de l'objecte 03" loading="lazy" onerror="this.remove()"></div>
           <div class="object-info">
             <p class="object-category">LES FEINES DEL CAMP</p>
             <h3>Nom de l’objecte 03</h3>
             <p>Escriviu aquí què és aquest objecte, per a què servia i com s’utilitzava.</p>
             <p class="memory">Afegiu-hi un record d’Antonio, una anècdota o informació sobre la seva història.</p>
-            <!-- ÀUDIO OPCIONAL: deseu-lo com audio/camp-03.mp3 i traieu els comentaris d'aquest reproductor.
-    <audio controls preload="none"><source src="audio/camp-03.mp3" type="audio/mpeg">El navegador no pot reproduir aquest àudio.</audio>
-    -->
+            <!-- ÀUDIO (fase II): <audio controls preload="none" src="audio/camp-03.mp3"></audio> -->
           </div>
         </article>
         <article class="object-card" data-category="camp">
-          <div class="object-image"><img src="imatges/camp-04.jpg" alt="Fotografia de l'objecte 04" loading="lazy"
-              onload="this.style.display='block';this.nextElementSibling.style.display='none'"
-              onerror="this.style.display='none'">
-            <div class="photo-placeholder"><span class="photo-number">32</span><span>Afegiu la
-                fotografia</span><small>imatges/camp-04.jpg</small></div>
-          </div>
+          <div class="object-image"><div class="photo-placeholder"><span class="photo-number">33</span><span>Afegiu la fotografia</span><small>imatges/camp-04.jpg</small></div><img src="imatges/camp-04.jpg" alt="Fotografia de l'objecte 04" loading="lazy" onerror="this.remove()"></div>
           <div class="object-info">
             <p class="object-category">LES FEINES DEL CAMP</p>
             <h3>Nom de l’objecte 04</h3>
             <p>Escriviu aquí què és aquest objecte, per a què servia i com s’utilitzava.</p>
             <p class="memory">Afegiu-hi un record d’Antonio, una anècdota o informació sobre la seva història.</p>
-            <!-- ÀUDIO OPCIONAL: deseu-lo com audio/camp-04.mp3 i traieu els comentaris d'aquest reproductor.
-    <audio controls preload="none"><source src="audio/camp-04.mp3" type="audio/mpeg">El navegador no pot reproduir aquest àudio.</audio>
-    -->
+            <!-- ÀUDIO (fase II): <audio controls preload="none" src="audio/camp-04.mp3"></audio> -->
           </div>
         </article>
         <article class="object-card" data-category="camp">
-          <div class="object-image"><img src="imatges/camp-05.jpg" alt="Fotografia de l'objecte 05" loading="lazy"
-              onload="this.style.display='block';this.nextElementSibling.style.display='none'"
-              onerror="this.style.display='none'">
-            <div class="photo-placeholder"><span class="photo-number">33</span><span>Afegiu la
-                fotografia</span><small>imatges/camp-05.jpg</small></div>
-          </div>
+          <div class="object-image"><div class="photo-placeholder"><span class="photo-number">34</span><span>Afegiu la fotografia</span><small>imatges/camp-05.jpg</small></div><img src="imatges/camp-05.jpg" alt="Fotografia de l'objecte 05" loading="lazy" onerror="this.remove()"></div>
           <div class="object-info">
             <p class="object-category">LES FEINES DEL CAMP</p>
             <h3>Nom de l’objecte 05</h3>
             <p>Escriviu aquí què és aquest objecte, per a què servia i com s’utilitzava.</p>
             <p class="memory">Afegiu-hi un record d’Antonio, una anècdota o informació sobre la seva història.</p>
-            <!-- ÀUDIO OPCIONAL: deseu-lo com audio/camp-05.mp3 i traieu els comentaris d'aquest reproductor.
-    <audio controls preload="none"><source src="audio/camp-05.mp3" type="audio/mpeg">El navegador no pot reproduir aquest àudio.</audio>
-    -->
+            <!-- ÀUDIO (fase II): <audio controls preload="none" src="audio/camp-05.mp3"></audio> -->
           </div>
         </article>
         <article class="object-card" data-category="camp">
-          <div class="object-image"><img src="imatges/camp-06.jpg" alt="Fotografia de l'objecte 06" loading="lazy"
-              onload="this.style.display='block';this.nextElementSibling.style.display='none'"
-              onerror="this.style.display='none'">
-            <div class="photo-placeholder"><span class="photo-number">34</span><span>Afegiu la
-                fotografia</span><small>imatges/camp-06.jpg</small></div>
-          </div>
+          <div class="object-image"><div class="photo-placeholder"><span class="photo-number">35</span><span>Afegiu la fotografia</span><small>imatges/camp-06.jpg</small></div><img src="imatges/camp-06.jpg" alt="Fotografia de l'objecte 06" loading="lazy" onerror="this.remove()"></div>
           <div class="object-info">
             <p class="object-category">LES FEINES DEL CAMP</p>
             <h3>Nom de l’objecte 06</h3>
             <p>Escriviu aquí què és aquest objecte, per a què servia i com s’utilitzava.</p>
             <p class="memory">Afegiu-hi un record d’Antonio, una anècdota o informació sobre la seva història.</p>
-            <!-- ÀUDIO OPCIONAL: deseu-lo com audio/camp-06.mp3 i traieu els comentaris d'aquest reproductor.
-    <audio controls preload="none"><source src="audio/camp-06.mp3" type="audio/mpeg">El navegador no pot reproduir aquest àudio.</audio>
-    -->
+            <!-- ÀUDIO (fase II): <audio controls preload="none" src="audio/camp-06.mp3"></audio> -->
           </div>
         </article>
         <article class="object-card" data-category="camp">
-          <div class="object-image"><img src="imatges/camp-07.jpg" alt="Fotografia de l'objecte 07" loading="lazy"
-              onload="this.style.display='block';this.nextElementSibling.style.display='none'"
-              onerror="this.style.display='none'">
-            <div class="photo-placeholder"><span class="photo-number">35</span><span>Afegiu la
-                fotografia</span><small>imatges/camp-07.jpg</small></div>
-          </div>
+          <div class="object-image"><div class="photo-placeholder"><span class="photo-number">36</span><span>Afegiu la fotografia</span><small>imatges/camp-07.jpg</small></div><img src="imatges/camp-07.jpg" alt="Fotografia de l'objecte 07" loading="lazy" onerror="this.remove()"></div>
           <div class="object-info">
             <p class="object-category">LES FEINES DEL CAMP</p>
             <h3>Nom de l’objecte 07</h3>
             <p>Escriviu aquí què és aquest objecte, per a què servia i com s’utilitzava.</p>
             <p class="memory">Afegiu-hi un record d’Antonio, una anècdota o informació sobre la seva història.</p>
-            <!-- ÀUDIO OPCIONAL: deseu-lo com audio/camp-07.mp3 i traieu els comentaris d'aquest reproductor.
-    <audio controls preload="none"><source src="audio/camp-07.mp3" type="audio/mpeg">El navegador no pot reproduir aquest àudio.</audio>
-    -->
+            <!-- ÀUDIO (fase II): <audio controls preload="none" src="audio/camp-07.mp3"></audio> -->
           </div>
         </article>
         <article class="object-card" data-category="camp">
-          <div class="object-image"><img src="imatges/camp-08.jpg" alt="Fotografia de l'objecte 08" loading="lazy"
-              onload="this.style.display='block';this.nextElementSibling.style.display='none'"
-              onerror="this.style.display='none'">
-            <div class="photo-placeholder"><span class="photo-number">36</span><span>Afegiu la
-                fotografia</span><small>imatges/camp-08.jpg</small></div>
-          </div>
+          <div class="object-image"><div class="photo-placeholder"><span class="photo-number">37</span><span>Afegiu la fotografia</span><small>imatges/camp-08.jpg</small></div><img src="imatges/camp-08.jpg" alt="Fotografia de l'objecte 08" loading="lazy" onerror="this.remove()"></div>
           <div class="object-info">
             <p class="object-category">LES FEINES DEL CAMP</p>
             <h3>Nom de l’objecte 08</h3>
             <p>Escriviu aquí què és aquest objecte, per a què servia i com s’utilitzava.</p>
             <p class="memory">Afegiu-hi un record d’Antonio, una anècdota o informació sobre la seva història.</p>
-            <!-- ÀUDIO OPCIONAL: deseu-lo com audio/camp-08.mp3 i traieu els comentaris d'aquest reproductor.
-    <audio controls preload="none"><source src="audio/camp-08.mp3" type="audio/mpeg">El navegador no pot reproduir aquest àudio.</audio>
-    -->
+            <!-- ÀUDIO (fase II): <audio controls preload="none" src="audio/camp-08.mp3"></audio> -->
           </div>
         </article>
         <article class="object-card" data-category="camp">
-          <div class="object-image"><img src="imatges/camp-09.jpg" alt="Fotografia de l'objecte 09" loading="lazy"
-              onload="this.style.display='block';this.nextElementSibling.style.display='none'"
-              onerror="this.style.display='none'">
-            <div class="photo-placeholder"><span class="photo-number">37</span><span>Afegiu la
-                fotografia</span><small>imatges/camp-09.jpg</small></div>
-          </div>
+          <div class="object-image"><div class="photo-placeholder"><span class="photo-number">38</span><span>Afegiu la fotografia</span><small>imatges/camp-09.jpg</small></div><img src="imatges/camp-09.jpg" alt="Fotografia de l'objecte 09" loading="lazy" onerror="this.remove()"></div>
           <div class="object-info">
             <p class="object-category">LES FEINES DEL CAMP</p>
             <h3>Nom de l’objecte 09</h3>
             <p>Escriviu aquí què és aquest objecte, per a què servia i com s’utilitzava.</p>
             <p class="memory">Afegiu-hi un record d’Antonio, una anècdota o informació sobre la seva història.</p>
-            <!-- ÀUDIO OPCIONAL: deseu-lo com audio/camp-09.mp3 i traieu els comentaris d'aquest reproductor.
-    <audio controls preload="none"><source src="audio/camp-09.mp3" type="audio/mpeg">El navegador no pot reproduir aquest àudio.</audio>
-    -->
+            <!-- ÀUDIO (fase II): <audio controls preload="none" src="audio/camp-09.mp3"></audio> -->
           </div>
         </article>
         <article class="object-card" data-category="camp">
-          <div class="object-image"><img src="imatges/camp-10.jpg" alt="Fotografia de l'objecte 10" loading="lazy"
-              onload="this.style.display='block';this.nextElementSibling.style.display='none'"
-              onerror="this.style.display='none'">
-            <div class="photo-placeholder"><span class="photo-number">38</span><span>Afegiu la
-                fotografia</span><small>imatges/camp-10.jpg</small></div>
-          </div>
+          <div class="object-image"><div class="photo-placeholder"><span class="photo-number">39</span><span>Afegiu la fotografia</span><small>imatges/camp-10.jpg</small></div><img src="imatges/camp-10.jpg" alt="Fotografia de l'objecte 10" loading="lazy" onerror="this.remove()"></div>
           <div class="object-info">
             <p class="object-category">LES FEINES DEL CAMP</p>
             <h3>Nom de l’objecte 10</h3>
             <p>Escriviu aquí què és aquest objecte, per a què servia i com s’utilitzava.</p>
             <p class="memory">Afegiu-hi un record d’Antonio, una anècdota o informació sobre la seva història.</p>
-            <!-- ÀUDIO OPCIONAL: deseu-lo com audio/camp-10.mp3 i traieu els comentaris d'aquest reproductor.
-    <audio controls preload="none"><source src="audio/camp-10.mp3" type="audio/mpeg">El navegador no pot reproduir aquest àudio.</audio>
-    -->
+            <!-- ÀUDIO (fase II): <audio controls preload="none" src="audio/camp-10.mp3"></audio> -->
           </div>
         </article>
         <article class="object-card" data-category="camp">
-          <div class="object-image"><img src="imatges/camp-11.jpg" alt="Fotografia de l'objecte 11" loading="lazy"
-              onload="this.style.display='block';this.nextElementSibling.style.display='none'"
-              onerror="this.style.display='none'">
-            <div class="photo-placeholder"><span class="photo-number">39</span><span>Afegiu la
-                fotografia</span><small>imatges/camp-11.jpg</small></div>
-          </div>
+          <div class="object-image"><div class="photo-placeholder"><span class="photo-number">40</span><span>Afegiu la fotografia</span><small>imatges/camp-11.jpg</small></div><img src="imatges/camp-11.jpg" alt="Fotografia de l'objecte 11" loading="lazy" onerror="this.remove()"></div>
           <div class="object-info">
             <p class="object-category">LES FEINES DEL CAMP</p>
             <h3>Nom de l’objecte 11</h3>
             <p>Escriviu aquí què és aquest objecte, per a què servia i com s’utilitzava.</p>
             <p class="memory">Afegiu-hi un record d’Antonio, una anècdota o informació sobre la seva història.</p>
-            <!-- ÀUDIO OPCIONAL: deseu-lo com audio/camp-11.mp3 i traieu els comentaris d'aquest reproductor.
-    <audio controls preload="none"><source src="audio/camp-11.mp3" type="audio/mpeg">El navegador no pot reproduir aquest àudio.</audio>
-    -->
+            <!-- ÀUDIO (fase II): <audio controls preload="none" src="audio/camp-11.mp3"></audio> -->
           </div>
         </article>
         <article class="object-card" data-category="camp">
-          <div class="object-image"><img src="imatges/camp-12.jpg" alt="Fotografia de l'objecte 12" loading="lazy"
-              onload="this.style.display='block';this.nextElementSibling.style.display='none'"
-              onerror="this.style.display='none'">
-            <div class="photo-placeholder"><span class="photo-number">40</span><span>Afegiu la
-                fotografia</span><small>imatges/camp-12.jpg</small></div>
-          </div>
+          <div class="object-image"><div class="photo-placeholder"><span class="photo-number">41</span><span>Afegiu la fotografia</span><small>imatges/camp-12.jpg</small></div><img src="imatges/camp-12.jpg" alt="Fotografia de l'objecte 12" loading="lazy" onerror="this.remove()"></div>
           <div class="object-info">
             <p class="object-category">LES FEINES DEL CAMP</p>
             <h3>Nom de l’objecte 12</h3>
             <p>Escriviu aquí què és aquest objecte, per a què servia i com s’utilitzava.</p>
             <p class="memory">Afegiu-hi un record d’Antonio, una anècdota o informació sobre la seva història.</p>
-            <!-- ÀUDIO OPCIONAL: deseu-lo com audio/camp-12.mp3 i traieu els comentaris d'aquest reproductor.
-    <audio controls preload="none"><source src="audio/camp-12.mp3" type="audio/mpeg">El navegador no pot reproduir aquest àudio.</audio>
-    -->
+            <!-- ÀUDIO (fase II): <audio controls preload="none" src="audio/camp-12.mp3"></audio> -->
           </div>
         </article>
         <article class="object-card" data-category="camp">
-          <div class="object-image"><img src="imatges/camp-13.jpg" alt="Fotografia de l'objecte 13" loading="lazy"
-              onload="this.style.display='block';this.nextElementSibling.style.display='none'"
-              onerror="this.style.display='none'">
-            <div class="photo-placeholder"><span class="photo-number">41</span><span>Afegiu la
-                fotografia</span><small>imatges/camp-13.jpg</small></div>
-          </div>
+          <div class="object-image"><div class="photo-placeholder"><span class="photo-number">42</span><span>Afegiu la fotografia</span><small>imatges/camp-13.jpg</small></div><img src="imatges/camp-13.jpg" alt="Fotografia de l'objecte 13" loading="lazy" onerror="this.remove()"></div>
           <div class="object-info">
             <p class="object-category">LES FEINES DEL CAMP</p>
             <h3>Nom de l’objecte 13</h3>
             <p>Escriviu aquí què és aquest objecte, per a què servia i com s’utilitzava.</p>
             <p class="memory">Afegiu-hi un record d’Antonio, una anècdota o informació sobre la seva història.</p>
-            <!-- ÀUDIO OPCIONAL: deseu-lo com audio/camp-13.mp3 i traieu els comentaris d'aquest reproductor.
-    <audio controls preload="none"><source src="audio/camp-13.mp3" type="audio/mpeg">El navegador no pot reproduir aquest àudio.</audio>
-    -->
+            <!-- ÀUDIO (fase II): <audio controls preload="none" src="audio/camp-13.mp3"></audio> -->
           </div>
         </article>
         <article class="object-card" data-category="camp">
-          <div class="object-image"><img src="imatges/camp-14.jpg" alt="Fotografia de l'objecte 14" loading="lazy"
-              onload="this.style.display='block';this.nextElementSibling.style.display='none'"
-              onerror="this.style.display='none'">
-            <div class="photo-placeholder"><span class="photo-number">42</span><span>Afegiu la
-                fotografia</span><small>imatges/camp-14.jpg</small></div>
-          </div>
+          <div class="object-image"><div class="photo-placeholder"><span class="photo-number">43</span><span>Afegiu la fotografia</span><small>imatges/camp-14.jpg</small></div><img src="imatges/camp-14.jpg" alt="Fotografia de l'objecte 14" loading="lazy" onerror="this.remove()"></div>
           <div class="object-info">
             <p class="object-category">LES FEINES DEL CAMP</p>
             <h3>Nom de l’objecte 14</h3>
             <p>Escriviu aquí què és aquest objecte, per a què servia i com s’utilitzava.</p>
             <p class="memory">Afegiu-hi un record d’Antonio, una anècdota o informació sobre la seva història.</p>
-            <!-- ÀUDIO OPCIONAL: deseu-lo com audio/camp-14.mp3 i traieu els comentaris d'aquest reproductor.
-    <audio controls preload="none"><source src="audio/camp-14.mp3" type="audio/mpeg">El navegador no pot reproduir aquest àudio.</audio>
-    -->
+            <!-- ÀUDIO (fase II): <audio controls preload="none" src="audio/camp-14.mp3"></audio> -->
           </div>
         </article>
         <article class="object-card" data-category="camp">
-          <div class="object-image"><img src="imatges/camp-15.jpg" alt="Fotografia de l'objecte 15" loading="lazy"
-              onload="this.style.display='block';this.nextElementSibling.style.display='none'"
-              onerror="this.style.display='none'">
-            <div class="photo-placeholder"><span class="photo-number">43</span><span>Afegiu la
-                fotografia</span><small>imatges/camp-15.jpg</small></div>
-          </div>
+          <div class="object-image"><div class="photo-placeholder"><span class="photo-number">44</span><span>Afegiu la fotografia</span><small>imatges/camp-15.jpg</small></div><img src="imatges/camp-15.jpg" alt="Fotografia de l'objecte 15" loading="lazy" onerror="this.remove()"></div>
           <div class="object-info">
             <p class="object-category">LES FEINES DEL CAMP</p>
             <h3>Nom de l’objecte 15</h3>
             <p>Escriviu aquí què és aquest objecte, per a què servia i com s’utilitzava.</p>
             <p class="memory">Afegiu-hi un record d’Antonio, una anècdota o informació sobre la seva història.</p>
-            <!-- ÀUDIO OPCIONAL: deseu-lo com audio/camp-15.mp3 i traieu els comentaris d'aquest reproductor.
-    <audio controls preload="none"><source src="audio/camp-15.mp3" type="audio/mpeg">El navegador no pot reproduir aquest àudio.</audio>
-    -->
+            <!-- ÀUDIO (fase II): <audio controls preload="none" src="audio/camp-15.mp3"></audio> -->
           </div>
         </article>
         <article class="object-card" data-category="camp">
-          <div class="object-image"><img src="imatges/camp-16.jpg" alt="Fotografia de l'objecte 16" loading="lazy"
-              onload="this.style.display='block';this.nextElementSibling.style.display='none'"
-              onerror="this.style.display='none'">
-            <div class="photo-placeholder"><span class="photo-number">44</span><span>Afegiu la
-                fotografia</span><small>imatges/camp-16.jpg</small></div>
-          </div>
+          <div class="object-image"><div class="photo-placeholder"><span class="photo-number">45</span><span>Afegiu la fotografia</span><small>imatges/camp-16.jpg</small></div><img src="imatges/camp-16.jpg" alt="Fotografia de l'objecte 16" loading="lazy" onerror="this.remove()"></div>
           <div class="object-info">
             <p class="object-category">LES FEINES DEL CAMP</p>
             <h3>Nom de l’objecte 16</h3>
             <p>Escriviu aquí què és aquest objecte, per a què servia i com s’utilitzava.</p>
             <p class="memory">Afegiu-hi un record d’Antonio, una anècdota o informació sobre la seva història.</p>
-            <!-- ÀUDIO OPCIONAL: deseu-lo com audio/camp-16.mp3 i traieu els comentaris d'aquest reproductor.
-    <audio controls preload="none"><source src="audio/camp-16.mp3" type="audio/mpeg">El navegador no pot reproduir aquest àudio.</audio>
-    -->
+            <!-- ÀUDIO (fase II): <audio controls preload="none" src="audio/camp-16.mp3"></audio> -->
           </div>
         </article>
         <article class="object-card" data-category="camp">
-          <div class="object-image"><img src="imatges/camp-17.jpg" alt="Fotografia de l'objecte 17" loading="lazy"
-              onload="this.style.display='block';this.nextElementSibling.style.display='none'"
-              onerror="this.style.display='none'">
-            <div class="photo-placeholder"><span class="photo-number">45</span><span>Afegiu la
-                fotografia</span><small>imatges/camp-17.jpg</small></div>
-          </div>
+          <div class="object-image"><div class="photo-placeholder"><span class="photo-number">46</span><span>Afegiu la fotografia</span><small>imatges/camp-17.jpg</small></div><img src="imatges/camp-17.jpg" alt="Fotografia de l'objecte 17" loading="lazy" onerror="this.remove()"></div>
           <div class="object-info">
             <p class="object-category">LES FEINES DEL CAMP</p>
             <h3>Nom de l’objecte 17</h3>
             <p>Escriviu aquí què és aquest objecte, per a què servia i com s’utilitzava.</p>
             <p class="memory">Afegiu-hi un record d’Antonio, una anècdota o informació sobre la seva història.</p>
-            <!-- ÀUDIO OPCIONAL: deseu-lo com audio/camp-17.mp3 i traieu els comentaris d'aquest reproductor.
-    <audio controls preload="none"><source src="audio/camp-17.mp3" type="audio/mpeg">El navegador no pot reproduir aquest àudio.</audio>
-    -->
+            <!-- ÀUDIO (fase II): <audio controls preload="none" src="audio/camp-17.mp3"></audio> -->
           </div>
         </article>
         <article class="object-card" data-category="camp">
-          <div class="object-image"><img src="imatges/camp-18.jpg" alt="Fotografia de l'objecte 18" loading="lazy"
-              onload="this.style.display='block';this.nextElementSibling.style.display='none'"
-              onerror="this.style.display='none'">
-            <div class="photo-placeholder"><span class="photo-number">46</span><span>Afegiu la
-                fotografia</span><small>imatges/camp-18.jpg</small></div>
-          </div>
+          <div class="object-image"><div class="photo-placeholder"><span class="photo-number">47</span><span>Afegiu la fotografia</span><small>imatges/camp-18.jpg</small></div><img src="imatges/camp-18.jpg" alt="Fotografia de l'objecte 18" loading="lazy" onerror="this.remove()"></div>
           <div class="object-info">
             <p class="object-category">LES FEINES DEL CAMP</p>
             <h3>Nom de l’objecte 18</h3>
             <p>Escriviu aquí què és aquest objecte, per a què servia i com s’utilitzava.</p>
             <p class="memory">Afegiu-hi un record d’Antonio, una anècdota o informació sobre la seva història.</p>
-            <!-- ÀUDIO OPCIONAL: deseu-lo com audio/camp-18.mp3 i traieu els comentaris d'aquest reproductor.
-    <audio controls preload="none"><source src="audio/camp-18.mp3" type="audio/mpeg">El navegador no pot reproduir aquest àudio.</audio>
-    -->
+            <!-- ÀUDIO (fase II): <audio controls preload="none" src="audio/camp-18.mp3"></audio> -->
           </div>
         </article>
         <article class="object-card" data-category="camp">
-          <div class="object-image"><img src="imatges/camp-19.jpg" alt="Fotografia de l'objecte 19" loading="lazy"
-              onload="this.style.display='block';this.nextElementSibling.style.display='none'"
-              onerror="this.style.display='none'">
-            <div class="photo-placeholder"><span class="photo-number">47</span><span>Afegiu la
-                fotografia</span><small>imatges/camp-19.jpg</small></div>
-          </div>
+          <div class="object-image"><div class="photo-placeholder"><span class="photo-number">48</span><span>Afegiu la fotografia</span><small>imatges/camp-19.jpg</small></div><img src="imatges/camp-19.jpg" alt="Fotografia de l'objecte 19" loading="lazy" onerror="this.remove()"></div>
           <div class="object-info">
             <p class="object-category">LES FEINES DEL CAMP</p>
             <h3>Nom de l’objecte 19</h3>
             <p>Escriviu aquí què és aquest objecte, per a què servia i com s’utilitzava.</p>
             <p class="memory">Afegiu-hi un record d’Antonio, una anècdota o informació sobre la seva història.</p>
-            <!-- ÀUDIO OPCIONAL: deseu-lo com audio/camp-19.mp3 i traieu els comentaris d'aquest reproductor.
-    <audio controls preload="none"><source src="audio/camp-19.mp3" type="audio/mpeg">El navegador no pot reproduir aquest àudio.</audio>
-    -->
+            <!-- ÀUDIO (fase II): <audio controls preload="none" src="audio/camp-19.mp3"></audio> -->
           </div>
         </article>
         <article class="object-card" data-category="camp">
-          <div class="object-image"><img src="imatges/camp-20.jpg" alt="Fotografia de l'objecte 20" loading="lazy"
-              onload="this.style.display='block';this.nextElementSibling.style.display='none'"
-              onerror="this.style.display='none'">
-            <div class="photo-placeholder"><span class="photo-number">48</span><span>Afegiu la
-                fotografia</span><small>imatges/camp-20.jpg</small></div>
-          </div>
+          <div class="object-image"><div class="photo-placeholder"><span class="photo-number">49</span><span>Afegiu la fotografia</span><small>imatges/camp-20.jpg</small></div><img src="imatges/camp-20.jpg" alt="Fotografia de l'objecte 20" loading="lazy" onerror="this.remove()"></div>
           <div class="object-info">
             <p class="object-category">LES FEINES DEL CAMP</p>
             <h3>Nom de l’objecte 20</h3>
             <p>Escriviu aquí què és aquest objecte, per a què servia i com s’utilitzava.</p>
             <p class="memory">Afegiu-hi un record d’Antonio, una anècdota o informació sobre la seva història.</p>
-            <!-- ÀUDIO OPCIONAL: deseu-lo com audio/camp-20.mp3 i traieu els comentaris d'aquest reproductor.
-    <audio controls preload="none"><source src="audio/camp-20.mp3" type="audio/mpeg">El navegador no pot reproduir aquest àudio.</audio>
-    -->
+            <!-- ÀUDIO (fase II): <audio controls preload="none" src="audio/camp-20.mp3"></audio> -->
           </div>
         </article>
         <article class="object-card" data-category="camp">
-          <div class="object-image"><img src="imatges/camp-21.jpg" alt="Fotografia de l'objecte 21" loading="lazy"
-              onload="this.style.display='block';this.nextElementSibling.style.display='none'"
-              onerror="this.style.display='none'">
-            <div class="photo-placeholder"><span class="photo-number">49</span><span>Afegiu la
-                fotografia</span><small>imatges/camp-21.jpg</small></div>
-          </div>
+          <div class="object-image"><div class="photo-placeholder"><span class="photo-number">50</span><span>Afegiu la fotografia</span><small>imatges/camp-21.jpg</small></div><img src="imatges/camp-21.jpg" alt="Fotografia de l'objecte 21" loading="lazy" onerror="this.remove()"></div>
           <div class="object-info">
             <p class="object-category">LES FEINES DEL CAMP</p>
             <h3>Nom de l’objecte 21</h3>
             <p>Escriviu aquí què és aquest objecte, per a què servia i com s’utilitzava.</p>
             <p class="memory">Afegiu-hi un record d’Antonio, una anècdota o informació sobre la seva història.</p>
-            <!-- ÀUDIO OPCIONAL: deseu-lo com audio/camp-21.mp3 i traieu els comentaris d'aquest reproductor.
-    <audio controls preload="none"><source src="audio/camp-21.mp3" type="audio/mpeg">El navegador no pot reproduir aquest àudio.</audio>
-    -->
+            <!-- ÀUDIO (fase II): <audio controls preload="none" src="audio/camp-21.mp3"></audio> -->
           </div>
         </article>
         <article class="object-card" data-category="camp">
-          <div class="object-image"><img src="imatges/camp-22.jpg" alt="Fotografia de l'objecte 22" loading="lazy"
-              onload="this.style.display='block';this.nextElementSibling.style.display='none'"
-              onerror="this.style.display='none'">
-            <div class="photo-placeholder"><span class="photo-number">50</span><span>Afegiu la
-                fotografia</span><small>imatges/camp-22.jpg</small></div>
-          </div>
+          <div class="object-image"><div class="photo-placeholder"><span class="photo-number">51</span><span>Afegiu la fotografia</span><small>imatges/camp-22.jpg</small></div><img src="imatges/camp-22.jpg" alt="Fotografia de l'objecte 22" loading="lazy" onerror="this.remove()"></div>
           <div class="object-info">
             <p class="object-category">LES FEINES DEL CAMP</p>
             <h3>Nom de l’objecte 22</h3>
             <p>Escriviu aquí què és aquest objecte, per a què servia i com s’utilitzava.</p>
             <p class="memory">Afegiu-hi un record d’Antonio, una anècdota o informació sobre la seva història.</p>
-            <!-- ÀUDIO OPCIONAL: deseu-lo com audio/camp-22.mp3 i traieu els comentaris d'aquest reproductor.
-    <audio controls preload="none"><source src="audio/camp-22.mp3" type="audio/mpeg">El navegador no pot reproduir aquest àudio.</audio>
-    -->
+            <!-- ÀUDIO (fase II): <audio controls preload="none" src="audio/camp-22.mp3"></audio> -->
           </div>
         </article>
         <article class="object-card" data-category="camp">
-          <div class="object-image"><img src="imatges/camp-23.jpg" alt="Fotografia de l'objecte 23" loading="lazy"
-              onload="this.style.display='block';this.nextElementSibling.style.display='none'"
-              onerror="this.style.display='none'">
-            <div class="photo-placeholder"><span class="photo-number">51</span><span>Afegiu la
-                fotografia</span><small>imatges/camp-23.jpg</small></div>
-          </div>
+          <div class="object-image"><div class="photo-placeholder"><span class="photo-number">52</span><span>Afegiu la fotografia</span><small>imatges/camp-23.jpg</small></div><img src="imatges/camp-23.jpg" alt="Fotografia de l'objecte 23" loading="lazy" onerror="this.remove()"></div>
           <div class="object-info">
             <p class="object-category">LES FEINES DEL CAMP</p>
             <h3>Nom de l’objecte 23</h3>
             <p>Escriviu aquí què és aquest objecte, per a què servia i com s’utilitzava.</p>
             <p class="memory">Afegiu-hi un record d’Antonio, una anècdota o informació sobre la seva història.</p>
-            <!-- ÀUDIO OPCIONAL: deseu-lo com audio/camp-23.mp3 i traieu els comentaris d'aquest reproductor.
-    <audio controls preload="none"><source src="audio/camp-23.mp3" type="audio/mpeg">El navegador no pot reproduir aquest àudio.</audio>
-    -->
+            <!-- ÀUDIO (fase II): <audio controls preload="none" src="audio/camp-23.mp3"></audio> -->
           </div>
         </article>
         <article class="object-card" data-category="camp">
-          <div class="object-image"><img src="imatges/camp-24.jpg" alt="Fotografia de l'objecte 24" loading="lazy"
-              onload="this.style.display='block';this.nextElementSibling.style.display='none'"
-              onerror="this.style.display='none'">
-            <div class="photo-placeholder"><span class="photo-number">52</span><span>Afegiu la
-                fotografia</span><small>imatges/camp-24.jpg</small></div>
-          </div>
+          <div class="object-image"><div class="photo-placeholder"><span class="photo-number">53</span><span>Afegiu la fotografia</span><small>imatges/camp-24.jpg</small></div><img src="imatges/camp-24.jpg" alt="Fotografia de l'objecte 24" loading="lazy" onerror="this.remove()"></div>
           <div class="object-info">
             <p class="object-category">LES FEINES DEL CAMP</p>
             <h3>Nom de l’objecte 24</h3>
             <p>Escriviu aquí què és aquest objecte, per a què servia i com s’utilitzava.</p>
             <p class="memory">Afegiu-hi un record d’Antonio, una anècdota o informació sobre la seva història.</p>
-            <!-- ÀUDIO OPCIONAL: deseu-lo com audio/camp-24.mp3 i traieu els comentaris d'aquest reproductor.
-    <audio controls preload="none"><source src="audio/camp-24.mp3" type="audio/mpeg">El navegador no pot reproduir aquest àudio.</audio>
-    -->
+            <!-- ÀUDIO (fase II): <audio controls preload="none" src="audio/camp-24.mp3"></audio> -->
           </div>
         </article>
         <article class="object-card" data-category="camp">
-          <div class="object-image"><img src="imatges/camp-25.jpg" alt="Fotografia de l'objecte 25" loading="lazy"
-              onload="this.style.display='block';this.nextElementSibling.style.display='none'"
-              onerror="this.style.display='none'">
-            <div class="photo-placeholder"><span class="photo-number">53</span><span>Afegiu la
-                fotografia</span><small>imatges/camp-25.jpg</small></div>
-          </div>
+          <div class="object-image"><div class="photo-placeholder"><span class="photo-number">54</span><span>Afegiu la fotografia</span><small>imatges/camp-25.jpg</small></div><img src="imatges/camp-25.jpg" alt="Fotografia de l'objecte 25" loading="lazy" onerror="this.remove()"></div>
           <div class="object-info">
             <p class="object-category">LES FEINES DEL CAMP</p>
             <h3>Nom de l’objecte 25</h3>
             <p>Escriviu aquí què és aquest objecte, per a què servia i com s’utilitzava.</p>
             <p class="memory">Afegiu-hi un record d’Antonio, una anècdota o informació sobre la seva història.</p>
-            <!-- ÀUDIO OPCIONAL: deseu-lo com audio/camp-25.mp3 i traieu els comentaris d'aquest reproductor.
-    <audio controls preload="none"><source src="audio/camp-25.mp3" type="audio/mpeg">El navegador no pot reproduir aquest àudio.</audio>
-    -->
+            <!-- ÀUDIO (fase II): <audio controls preload="none" src="audio/camp-25.mp3"></audio> -->
           </div>
         </article>
         <article class="object-card" data-category="camp">
-          <div class="object-image"><img src="imatges/camp-26.jpg" alt="Fotografia de l'objecte 26" loading="lazy"
-              onload="this.style.display='block';this.nextElementSibling.style.display='none'"
-              onerror="this.style.display='none'">
-            <div class="photo-placeholder"><span class="photo-number">54</span><span>Afegiu la
-                fotografia</span><small>imatges/camp-26.jpg</small></div>
-          </div>
+          <div class="object-image"><div class="photo-placeholder"><span class="photo-number">55</span><span>Afegiu la fotografia</span><small>imatges/camp-26.jpg</small></div><img src="imatges/camp-26.jpg" alt="Fotografia de l'objecte 26" loading="lazy" onerror="this.remove()"></div>
           <div class="object-info">
             <p class="object-category">LES FEINES DEL CAMP</p>
             <h3>Nom de l’objecte 26</h3>
             <p>Escriviu aquí què és aquest objecte, per a què servia i com s’utilitzava.</p>
             <p class="memory">Afegiu-hi un record d’Antonio, una anècdota o informació sobre la seva història.</p>
-            <!-- ÀUDIO OPCIONAL: deseu-lo com audio/camp-26.mp3 i traieu els comentaris d'aquest reproductor.
-    <audio controls preload="none"><source src="audio/camp-26.mp3" type="audio/mpeg">El navegador no pot reproduir aquest àudio.</audio>
-    -->
+            <!-- ÀUDIO (fase II): <audio controls preload="none" src="audio/camp-26.mp3"></audio> -->
           </div>
         </article>
         <article class="object-card" data-category="camp">
-          <div class="object-image"><img src="imatges/camp-27.jpg" alt="Fotografia de l'objecte 27" loading="lazy"
-              onload="this.style.display='block';this.nextElementSibling.style.display='none'"
-              onerror="this.style.display='none'">
-            <div class="photo-placeholder"><span class="photo-number">55</span><span>Afegiu la
-                fotografia</span><small>imatges/camp-27.jpg</small></div>
-          </div>
+          <div class="object-image"><div class="photo-placeholder"><span class="photo-number">56</span><span>Afegiu la fotografia</span><small>imatges/camp-27.jpg</small></div><img src="imatges/camp-27.jpg" alt="Fotografia de l'objecte 27" loading="lazy" onerror="this.remove()"></div>
           <div class="object-info">
             <p class="object-category">LES FEINES DEL CAMP</p>
             <h3>Nom de l’objecte 27</h3>
             <p>Escriviu aquí què és aquest objecte, per a què servia i com s’utilitzava.</p>
             <p class="memory">Afegiu-hi un record d’Antonio, una anècdota o informació sobre la seva història.</p>
-            <!-- ÀUDIO OPCIONAL: deseu-lo com audio/camp-27.mp3 i traieu els comentaris d'aquest reproductor.
-    <audio controls preload="none"><source src="audio/camp-27.mp3" type="audio/mpeg">El navegador no pot reproduir aquest àudio.</audio>
-    -->
+            <!-- ÀUDIO (fase II): <audio controls preload="none" src="audio/camp-27.mp3"></audio> -->
           </div>
         </article>
         <article class="object-card" data-category="camp">
-          <div class="object-image"><img src="imatges/camp-28.jpg" alt="Fotografia de l'objecte 28" loading="lazy"
-              onload="this.style.display='block';this.nextElementSibling.style.display='none'"
-              onerror="this.style.display='none'">
-            <div class="photo-placeholder"><span class="photo-number">56</span><span>Afegiu la
-                fotografia</span><small>imatges/camp-28.jpg</small></div>
-          </div>
+          <div class="object-image"><div class="photo-placeholder"><span class="photo-number">57</span><span>Afegiu la fotografia</span><small>imatges/camp-28.jpg</small></div><img src="imatges/camp-28.jpg" alt="Fotografia de l'objecte 28" loading="lazy" onerror="this.remove()"></div>
           <div class="object-info">
             <p class="object-category">LES FEINES DEL CAMP</p>
             <h3>Nom de l’objecte 28</h3>
             <p>Escriviu aquí què és aquest objecte, per a què servia i com s’utilitzava.</p>
             <p class="memory">Afegiu-hi un record d’Antonio, una anècdota o informació sobre la seva història.</p>
-            <!-- ÀUDIO OPCIONAL: deseu-lo com audio/camp-28.mp3 i traieu els comentaris d'aquest reproductor.
-    <audio controls preload="none"><source src="audio/camp-28.mp3" type="audio/mpeg">El navegador no pot reproduir aquest àudio.</audio>
-    -->
+            <!-- ÀUDIO (fase II): <audio controls preload="none" src="audio/camp-28.mp3"></audio> -->
           </div>
         </article>
         <article class="object-card" data-category="camp">
-          <div class="object-image"><img src="imatges/camp-29.jpg" alt="Fotografia de l'objecte 29" loading="lazy"
-              onload="this.style.display='block';this.nextElementSibling.style.display='none'"
-              onerror="this.style.display='none'">
-            <div class="photo-placeholder"><span class="photo-number">57</span><span>Afegiu la
-                fotografia</span><small>imatges/camp-29.jpg</small></div>
-          </div>
+          <div class="object-image"><div class="photo-placeholder"><span class="photo-number">58</span><span>Afegiu la fotografia</span><small>imatges/camp-29.jpg</small></div><img src="imatges/camp-29.jpg" alt="Fotografia de l'objecte 29" loading="lazy" onerror="this.remove()"></div>
           <div class="object-info">
             <p class="object-category">LES FEINES DEL CAMP</p>
             <h3>Nom de l’objecte 29</h3>
             <p>Escriviu aquí què és aquest objecte, per a què servia i com s’utilitzava.</p>
             <p class="memory">Afegiu-hi un record d’Antonio, una anècdota o informació sobre la seva història.</p>
-            <!-- ÀUDIO OPCIONAL: deseu-lo com audio/camp-29.mp3 i traieu els comentaris d'aquest reproductor.
-    <audio controls preload="none"><source src="audio/camp-29.mp3" type="audio/mpeg">El navegador no pot reproduir aquest àudio.</audio>
-    -->
+            <!-- ÀUDIO (fase II): <audio controls preload="none" src="audio/camp-29.mp3"></audio> -->
           </div>
         </article>
         <article class="object-card" data-category="camp">
-          <div class="object-image"><img src="imatges/camp-30.jpg" alt="Fotografia de l'objecte 30" loading="lazy"
-              onload="this.style.display='block';this.nextElementSibling.style.display='none'"
-              onerror="this.style.display='none'">
-            <div class="photo-placeholder"><span class="photo-number">58</span><span>Afegiu la
-                fotografia</span><small>imatges/camp-30.jpg</small></div>
-          </div>
+          <div class="object-image"><div class="photo-placeholder"><span class="photo-number">59</span><span>Afegiu la fotografia</span><small>imatges/camp-30.jpg</small></div><img src="imatges/camp-30.jpg" alt="Fotografia de l'objecte 30" loading="lazy" onerror="this.remove()"></div>
           <div class="object-info">
             <p class="object-category">LES FEINES DEL CAMP</p>
             <h3>Nom de l’objecte 30</h3>
             <p>Escriviu aquí què és aquest objecte, per a què servia i com s’utilitzava.</p>
             <p class="memory">Afegiu-hi un record d’Antonio, una anècdota o informació sobre la seva història.</p>
-            <!-- ÀUDIO OPCIONAL: deseu-lo com audio/camp-30.mp3 i traieu els comentaris d'aquest reproductor.
-    <audio controls preload="none"><source src="audio/camp-30.mp3" type="audio/mpeg">El navegador no pot reproduir aquest àudio.</audio>
-    -->
+            <!-- ÀUDIO (fase II): <audio controls preload="none" src="audio/camp-30.mp3"></audio> -->
+          </div>
+        </article>
+        <article class="object-card" data-category="camp">
+          <div class="object-image"><div class="photo-placeholder"><span class="photo-number">60</span><span>Afegiu la fotografia</span><small>imatges/camp-31.jpg</small></div><img src="imatges/camp-31.jpg" alt="Fotografia de l'objecte 31" loading="lazy" onerror="this.remove()"></div>
+          <div class="object-info">
+            <p class="object-category">LES FEINES DEL CAMP</p>
+            <h3>Nom de l’objecte 31</h3>
+            <p>Escriviu aquí què és aquest objecte, per a què servia i com s’utilitzava.</p>
+            <p class="memory">Afegiu-hi un record d’Antonio, una anècdota o informació sobre la seva història.</p>
+            <!-- ÀUDIO (fase II): <audio controls preload="none" src="audio/camp-31.mp3"></audio> -->
           </div>
         </article>
         <article class="object-card" data-category="poble">
-          <div class="object-image"><img src="imatges/poble-01.jpg" alt="Fotografia de l'objecte 01" loading="lazy"
-              onload="this.style.display='block';this.nextElementSibling.style.display='none'"
-              onerror="this.style.display='none'">
-            <div class="photo-placeholder"><span class="photo-number">59</span><span>Afegiu la
-                fotografia</span><small>imatges/poble-01.jpg</small></div>
-          </div>
+          <div class="object-image"><div class="photo-placeholder"><span class="photo-number">61</span><span>Afegiu la fotografia</span><small>imatges/poble-01.jpg</small></div><img src="imatges/poble-01.jpg" alt="Fotografia de l'objecte 01" loading="lazy" onerror="this.remove()"></div>
           <div class="object-info">
             <p class="object-category">LA VIDA AL POBLE</p>
             <h3>Nom de l’objecte 01</h3>
             <p>Escriviu aquí què és aquest objecte, per a què servia i com s’utilitzava.</p>
             <p class="memory">Afegiu-hi un record d’Antonio, una anècdota o informació sobre la seva història.</p>
-            <!-- ÀUDIO OPCIONAL: deseu-lo com audio/poble-01.mp3 i traieu els comentaris d'aquest reproductor.
-    <audio controls preload="none"><source src="audio/poble-01.mp3" type="audio/mpeg">El navegador no pot reproduir aquest àudio.</audio>
-    -->
+            <!-- ÀUDIO (fase II): <audio controls preload="none" src="audio/poble-01.mp3"></audio> -->
           </div>
         </article>
         <article class="object-card" data-category="poble">
-          <div class="object-image"><img src="imatges/poble-02.jpg" alt="Fotografia de l'objecte 02" loading="lazy"
-              onload="this.style.display='block';this.nextElementSibling.style.display='none'"
-              onerror="this.style.display='none'">
-            <div class="photo-placeholder"><span class="photo-number">60</span><span>Afegiu la
-                fotografia</span><small>imatges/poble-02.jpg</small></div>
-          </div>
+          <div class="object-image"><div class="photo-placeholder"><span class="photo-number">62</span><span>Afegiu la fotografia</span><small>imatges/poble-02.jpg</small></div><img src="imatges/poble-02.jpg" alt="Fotografia de l'objecte 02" loading="lazy" onerror="this.remove()"></div>
           <div class="object-info">
             <p class="object-category">LA VIDA AL POBLE</p>
             <h3>Nom de l’objecte 02</h3>
             <p>Escriviu aquí què és aquest objecte, per a què servia i com s’utilitzava.</p>
             <p class="memory">Afegiu-hi un record d’Antonio, una anècdota o informació sobre la seva història.</p>
-            <!-- ÀUDIO OPCIONAL: deseu-lo com audio/poble-02.mp3 i traieu els comentaris d'aquest reproductor.
-    <audio controls preload="none"><source src="audio/poble-02.mp3" type="audio/mpeg">El navegador no pot reproduir aquest àudio.</audio>
-    -->
+            <!-- ÀUDIO (fase II): <audio controls preload="none" src="audio/poble-02.mp3"></audio> -->
           </div>
         </article>
         <article class="object-card" data-category="poble">
-          <div class="object-image"><img src="imatges/poble-03.jpg" alt="Fotografia de l'objecte 03" loading="lazy"
-              onload="this.style.display='block';this.nextElementSibling.style.display='none'"
-              onerror="this.style.display='none'">
-            <div class="photo-placeholder"><span class="photo-number">61</span><span>Afegiu la
-                fotografia</span><small>imatges/poble-03.jpg</small></div>
-          </div>
+          <div class="object-image"><div class="photo-placeholder"><span class="photo-number">63</span><span>Afegiu la fotografia</span><small>imatges/poble-03.jpg</small></div><img src="imatges/poble-03.jpg" alt="Fotografia de l'objecte 03" loading="lazy" onerror="this.remove()"></div>
           <div class="object-info">
             <p class="object-category">LA VIDA AL POBLE</p>
             <h3>Nom de l’objecte 03</h3>
             <p>Escriviu aquí què és aquest objecte, per a què servia i com s’utilitzava.</p>
             <p class="memory">Afegiu-hi un record d’Antonio, una anècdota o informació sobre la seva història.</p>
-            <!-- ÀUDIO OPCIONAL: deseu-lo com audio/poble-03.mp3 i traieu els comentaris d'aquest reproductor.
-    <audio controls preload="none"><source src="audio/poble-03.mp3" type="audio/mpeg">El navegador no pot reproduir aquest àudio.</audio>
-    -->
+            <!-- ÀUDIO (fase II): <audio controls preload="none" src="audio/poble-03.mp3"></audio> -->
           </div>
         </article>
         <article class="object-card" data-category="poble">
-          <div class="object-image"><img src="imatges/poble-04.jpg" alt="Fotografia de l'objecte 04" loading="lazy"
-              onload="this.style.display='block';this.nextElementSibling.style.display='none'"
-              onerror="this.style.display='none'">
-            <div class="photo-placeholder"><span class="photo-number">62</span><span>Afegiu la
-                fotografia</span><small>imatges/poble-04.jpg</small></div>
-          </div>
+          <div class="object-image"><div class="photo-placeholder"><span class="photo-number">64</span><span>Afegiu la fotografia</span><small>imatges/poble-04.jpg</small></div><img src="imatges/poble-04.jpg" alt="Fotografia de l'objecte 04" loading="lazy" onerror="this.remove()"></div>
           <div class="object-info">
             <p class="object-category">LA VIDA AL POBLE</p>
             <h3>Nom de l’objecte 04</h3>
             <p>Escriviu aquí què és aquest objecte, per a què servia i com s’utilitzava.</p>
             <p class="memory">Afegiu-hi un record d’Antonio, una anècdota o informació sobre la seva història.</p>
-            <!-- ÀUDIO OPCIONAL: deseu-lo com audio/poble-04.mp3 i traieu els comentaris d'aquest reproductor.
-    <audio controls preload="none"><source src="audio/poble-04.mp3" type="audio/mpeg">El navegador no pot reproduir aquest àudio.</audio>
-    -->
+            <!-- ÀUDIO (fase II): <audio controls preload="none" src="audio/poble-04.mp3"></audio> -->
           </div>
         </article>
         <article class="object-card" data-category="poble">
-          <div class="object-image"><img src="imatges/poble-05.jpg" alt="Fotografia de l'objecte 05" loading="lazy"
-              onload="this.style.display='block';this.nextElementSibling.style.display='none'"
-              onerror="this.style.display='none'">
-            <div class="photo-placeholder"><span class="photo-number">63</span><span>Afegiu la
-                fotografia</span><small>imatges/poble-05.jpg</small></div>
-          </div>
+          <div class="object-image"><div class="photo-placeholder"><span class="photo-number">65</span><span>Afegiu la fotografia</span><small>imatges/poble-05.jpg</small></div><img src="imatges/poble-05.jpg" alt="Fotografia de l'objecte 05" loading="lazy" onerror="this.remove()"></div>
           <div class="object-info">
             <p class="object-category">LA VIDA AL POBLE</p>
             <h3>Nom de l’objecte 05</h3>
             <p>Escriviu aquí què és aquest objecte, per a què servia i com s’utilitzava.</p>
             <p class="memory">Afegiu-hi un record d’Antonio, una anècdota o informació sobre la seva història.</p>
-            <!-- ÀUDIO OPCIONAL: deseu-lo com audio/poble-05.mp3 i traieu els comentaris d'aquest reproductor.
-    <audio controls preload="none"><source src="audio/poble-05.mp3" type="audio/mpeg">El navegador no pot reproduir aquest àudio.</audio>
-    -->
+            <!-- ÀUDIO (fase II): <audio controls preload="none" src="audio/poble-05.mp3"></audio> -->
           </div>
         </article>
         <article class="object-card" data-category="poble">
-          <div class="object-image"><img src="imatges/poble-06.jpg" alt="Fotografia de l'objecte 06" loading="lazy"
-              onload="this.style.display='block';this.nextElementSibling.style.display='none'"
-              onerror="this.style.display='none'">
-            <div class="photo-placeholder"><span class="photo-number">64</span><span>Afegiu la
-                fotografia</span><small>imatges/poble-06.jpg</small></div>
-          </div>
+          <div class="object-image"><div class="photo-placeholder"><span class="photo-number">66</span><span>Afegiu la fotografia</span><small>imatges/poble-06.jpg</small></div><img src="imatges/poble-06.jpg" alt="Fotografia de l'objecte 06" loading="lazy" onerror="this.remove()"></div>
           <div class="object-info">
             <p class="object-category">LA VIDA AL POBLE</p>
             <h3>Nom de l’objecte 06</h3>
             <p>Escriviu aquí què és aquest objecte, per a què servia i com s’utilitzava.</p>
             <p class="memory">Afegiu-hi un record d’Antonio, una anècdota o informació sobre la seva història.</p>
-            <!-- ÀUDIO OPCIONAL: deseu-lo com audio/poble-06.mp3 i traieu els comentaris d'aquest reproductor.
-    <audio controls preload="none"><source src="audio/poble-06.mp3" type="audio/mpeg">El navegador no pot reproduir aquest àudio.</audio>
-    -->
+            <!-- ÀUDIO (fase II): <audio controls preload="none" src="audio/poble-06.mp3"></audio> -->
           </div>
         </article>
         <article class="object-card" data-category="poble">
-          <div class="object-image"><img src="imatges/poble-07.jpg" alt="Fotografia de l'objecte 07" loading="lazy"
-              onload="this.style.display='block';this.nextElementSibling.style.display='none'"
-              onerror="this.style.display='none'">
-            <div class="photo-placeholder"><span class="photo-number">65</span><span>Afegiu la
-                fotografia</span><small>imatges/poble-07.jpg</small></div>
-          </div>
+          <div class="object-image"><div class="photo-placeholder"><span class="photo-number">67</span><span>Afegiu la fotografia</span><small>imatges/poble-07.jpg</small></div><img src="imatges/poble-07.jpg" alt="Fotografia de l'objecte 07" loading="lazy" onerror="this.remove()"></div>
           <div class="object-info">
             <p class="object-category">LA VIDA AL POBLE</p>
             <h3>Nom de l’objecte 07</h3>
             <p>Escriviu aquí què és aquest objecte, per a què servia i com s’utilitzava.</p>
             <p class="memory">Afegiu-hi un record d’Antonio, una anècdota o informació sobre la seva història.</p>
-            <!-- ÀUDIO OPCIONAL: deseu-lo com audio/poble-07.mp3 i traieu els comentaris d'aquest reproductor.
-    <audio controls preload="none"><source src="audio/poble-07.mp3" type="audio/mpeg">El navegador no pot reproduir aquest àudio.</audio>
-    -->
+            <!-- ÀUDIO (fase II): <audio controls preload="none" src="audio/poble-07.mp3"></audio> -->
           </div>
         </article>
         <article class="object-card" data-category="poble">
-          <div class="object-image"><img src="imatges/poble-08.jpg" alt="Fotografia de l'objecte 08" loading="lazy"
-              onload="this.style.display='block';this.nextElementSibling.style.display='none'"
-              onerror="this.style.display='none'">
-            <div class="photo-placeholder"><span class="photo-number">66</span><span>Afegiu la
-                fotografia</span><small>imatges/poble-08.jpg</small></div>
-          </div>
+          <div class="object-image"><div class="photo-placeholder"><span class="photo-number">68</span><span>Afegiu la fotografia</span><small>imatges/poble-08.jpg</small></div><img src="imatges/poble-08.jpg" alt="Fotografia de l'objecte 08" loading="lazy" onerror="this.remove()"></div>
           <div class="object-info">
             <p class="object-category">LA VIDA AL POBLE</p>
             <h3>Nom de l’objecte 08</h3>
             <p>Escriviu aquí què és aquest objecte, per a què servia i com s’utilitzava.</p>
             <p class="memory">Afegiu-hi un record d’Antonio, una anècdota o informació sobre la seva història.</p>
-            <!-- ÀUDIO OPCIONAL: deseu-lo com audio/poble-08.mp3 i traieu els comentaris d'aquest reproductor.
-    <audio controls preload="none"><source src="audio/poble-08.mp3" type="audio/mpeg">El navegador no pot reproduir aquest àudio.</audio>
-    -->
+            <!-- ÀUDIO (fase II): <audio controls preload="none" src="audio/poble-08.mp3"></audio> -->
           </div>
         </article>
         <article class="object-card" data-category="poble">
-          <div class="object-image"><img src="imatges/poble-09.jpg" alt="Fotografia de l'objecte 09" loading="lazy"
-              onload="this.style.display='block';this.nextElementSibling.style.display='none'"
-              onerror="this.style.display='none'">
-            <div class="photo-placeholder"><span class="photo-number">67</span><span>Afegiu la
-                fotografia</span><small>imatges/poble-09.jpg</small></div>
-          </div>
+          <div class="object-image"><div class="photo-placeholder"><span class="photo-number">69</span><span>Afegiu la fotografia</span><small>imatges/poble-09.jpg</small></div><img src="imatges/poble-09.jpg" alt="Fotografia de l'objecte 09" loading="lazy" onerror="this.remove()"></div>
           <div class="object-info">
             <p class="object-category">LA VIDA AL POBLE</p>
             <h3>Nom de l’objecte 09</h3>
             <p>Escriviu aquí què és aquest objecte, per a què servia i com s’utilitzava.</p>
             <p class="memory">Afegiu-hi un record d’Antonio, una anècdota o informació sobre la seva història.</p>
-            <!-- ÀUDIO OPCIONAL: deseu-lo com audio/poble-09.mp3 i traieu els comentaris d'aquest reproductor.
-    <audio controls preload="none"><source src="audio/poble-09.mp3" type="audio/mpeg">El navegador no pot reproduir aquest àudio.</audio>
-    -->
+            <!-- ÀUDIO (fase II): <audio controls preload="none" src="audio/poble-09.mp3"></audio> -->
           </div>
         </article>
         <article class="object-card" data-category="poble">
-          <div class="object-image"><img src="imatges/poble-10.jpg" alt="Fotografia de l'objecte 10" loading="lazy"
-              onload="this.style.display='block';this.nextElementSibling.style.display='none'"
-              onerror="this.style.display='none'">
-            <div class="photo-placeholder"><span class="photo-number">68</span><span>Afegiu la
-                fotografia</span><small>imatges/poble-10.jpg</small></div>
-          </div>
+          <div class="object-image"><div class="photo-placeholder"><span class="photo-number">70</span><span>Afegiu la fotografia</span><small>imatges/poble-10.jpg</small></div><img src="imatges/poble-10.jpg" alt="Fotografia de l'objecte 10" loading="lazy" onerror="this.remove()"></div>
           <div class="object-info">
             <p class="object-category">LA VIDA AL POBLE</p>
             <h3>Nom de l’objecte 10</h3>
             <p>Escriviu aquí què és aquest objecte, per a què servia i com s’utilitzava.</p>
             <p class="memory">Afegiu-hi un record d’Antonio, una anècdota o informació sobre la seva història.</p>
-            <!-- ÀUDIO OPCIONAL: deseu-lo com audio/poble-10.mp3 i traieu els comentaris d'aquest reproductor.
-    <audio controls preload="none"><source src="audio/poble-10.mp3" type="audio/mpeg">El navegador no pot reproduir aquest àudio.</audio>
-    -->
+            <!-- ÀUDIO (fase II): <audio controls preload="none" src="audio/poble-10.mp3"></audio> -->
           </div>
         </article>
         <article class="object-card" data-category="poble">
-          <div class="object-image"><img src="imatges/poble-11.jpg" alt="Fotografia de l'objecte 11" loading="lazy"
-              onload="this.style.display='block';this.nextElementSibling.style.display='none'"
-              onerror="this.style.display='none'">
-            <div class="photo-placeholder"><span class="photo-number">69</span><span>Afegiu la
-                fotografia</span><small>imatges/poble-11.jpg</small></div>
-          </div>
+          <div class="object-image"><div class="photo-placeholder"><span class="photo-number">71</span><span>Afegiu la fotografia</span><small>imatges/poble-11.jpg</small></div><img src="imatges/poble-11.jpg" alt="Fotografia de l'objecte 11" loading="lazy" onerror="this.remove()"></div>
           <div class="object-info">
             <p class="object-category">LA VIDA AL POBLE</p>
             <h3>Nom de l’objecte 11</h3>
             <p>Escriviu aquí què és aquest objecte, per a què servia i com s’utilitzava.</p>
             <p class="memory">Afegiu-hi un record d’Antonio, una anècdota o informació sobre la seva història.</p>
-            <!-- ÀUDIO OPCIONAL: deseu-lo com audio/poble-11.mp3 i traieu els comentaris d'aquest reproductor.
-    <audio controls preload="none"><source src="audio/poble-11.mp3" type="audio/mpeg">El navegador no pot reproduir aquest àudio.</audio>
-    -->
+            <!-- ÀUDIO (fase II): <audio controls preload="none" src="audio/poble-11.mp3"></audio> -->
           </div>
         </article>
         <article class="object-card" data-category="poble">
-          <div class="object-image"><img src="imatges/poble-12.jpg" alt="Fotografia de l'objecte 12" loading="lazy"
-              onload="this.style.display='block';this.nextElementSibling.style.display='none'"
-              onerror="this.style.display='none'">
-            <div class="photo-placeholder"><span class="photo-number">70</span><span>Afegiu la
-                fotografia</span><small>imatges/poble-12.jpg</small></div>
-          </div>
+          <div class="object-image"><div class="photo-placeholder"><span class="photo-number">72</span><span>Afegiu la fotografia</span><small>imatges/poble-12.jpg</small></div><img src="imatges/poble-12.jpg" alt="Fotografia de l'objecte 12" loading="lazy" onerror="this.remove()"></div>
           <div class="object-info">
             <p class="object-category">LA VIDA AL POBLE</p>
             <h3>Nom de l’objecte 12</h3>
             <p>Escriviu aquí què és aquest objecte, per a què servia i com s’utilitzava.</p>
             <p class="memory">Afegiu-hi un record d’Antonio, una anècdota o informació sobre la seva història.</p>
-            <!-- ÀUDIO OPCIONAL: deseu-lo com audio/poble-12.mp3 i traieu els comentaris d'aquest reproductor.
-    <audio controls preload="none"><source src="audio/poble-12.mp3" type="audio/mpeg">El navegador no pot reproduir aquest àudio.</audio>
-    -->
+            <!-- ÀUDIO (fase II): <audio controls preload="none" src="audio/poble-12.mp3"></audio> -->
           </div>
         </article>
         <article class="object-card" data-category="poble">
-          <div class="object-image"><img src="imatges/poble-13.jpg" alt="Fotografia de l'objecte 13" loading="lazy"
-              onload="this.style.display='block';this.nextElementSibling.style.display='none'"
-              onerror="this.style.display='none'">
-            <div class="photo-placeholder"><span class="photo-number">71</span><span>Afegiu la
-                fotografia</span><small>imatges/poble-13.jpg</small></div>
-          </div>
+          <div class="object-image"><div class="photo-placeholder"><span class="photo-number">73</span><span>Afegiu la fotografia</span><small>imatges/poble-13.jpg</small></div><img src="imatges/poble-13.jpg" alt="Fotografia de l'objecte 13" loading="lazy" onerror="this.remove()"></div>
           <div class="object-info">
             <p class="object-category">LA VIDA AL POBLE</p>
             <h3>Nom de l’objecte 13</h3>
             <p>Escriviu aquí què és aquest objecte, per a què servia i com s’utilitzava.</p>
             <p class="memory">Afegiu-hi un record d’Antonio, una anècdota o informació sobre la seva història.</p>
-            <!-- ÀUDIO OPCIONAL: deseu-lo com audio/poble-13.mp3 i traieu els comentaris d'aquest reproductor.
-    <audio controls preload="none"><source src="audio/poble-13.mp3" type="audio/mpeg">El navegador no pot reproduir aquest àudio.</audio>
-    -->
+            <!-- ÀUDIO (fase II): <audio controls preload="none" src="audio/poble-13.mp3"></audio> -->
+          </div>
+        </article>
+        <article class="object-card" data-category="poble">
+          <div class="object-image"><div class="photo-placeholder"><span class="photo-number">74</span><span>Afegiu la fotografia</span><small>imatges/poble-14.jpg</small></div><img src="imatges/poble-14.jpg" alt="Fotografia de l'objecte 14" loading="lazy" onerror="this.remove()"></div>
+          <div class="object-info">
+            <p class="object-category">LA VIDA AL POBLE</p>
+            <h3>Nom de l’objecte 14</h3>
+            <p>Escriviu aquí què és aquest objecte, per a què servia i com s’utilitzava.</p>
+            <p class="memory">Afegiu-hi un record d’Antonio, una anècdota o informació sobre la seva història.</p>
+            <!-- ÀUDIO (fase II): <audio controls preload="none" src="audio/poble-14.mp3"></audio> -->
           </div>
         </article>
         <article class="object-card" data-category="musica">
-          <div class="object-image"><img src="imatges/musica-i-festes/alforjas-de-fiesta.jpg"
-              alt="Fotografia de alforjas de festa" loading="lazy"
-              onload="this.style.display='block';this.nextElementSibling.style.display='none'"
-              onerror="this.style.display='none'">
-
-              
-            <div class="photo-placeholder"><span class="photo-number">72</span><span>Afegiu la
-                fotografia</span><small>imatges/musica-01.jpg</small></div>
-          </div>
+          <div class="object-image"><div class="photo-placeholder"><span class="photo-number">75</span><span>Afegiu la fotografia</span><small>imatges/musica-i-festes/alforjas-de-fiesta.jpg</small></div><img src="imatges/musica-i-festes/alforjas-de-fiesta.jpg" alt="Fotografia de les alforges de festa" loading="lazy" onerror="this.remove()"></div>
           <div class="object-info">
             <p class="object-category">MÚSICA I FESTES</p>
             <h3>Alforges de festa</h3>
             <p>Alforges que es posaven al bestiar quan era festa major per anar d'un poble a l'altre.</p>
             <!-- <p class="memory">Afegiu-hi un record d’Antonio, una anècdota o informació sobre la seva història.</p> -->
-            <!-- ÀUDIO OPCIONAL: deseu-lo com audio/musica-01.mp3 i traieu els comentaris d'aquest reproductor.
-    <audio controls preload="none"><source src="audio/musica-01.mp3" type="audio/mpeg">El navegador no pot reproduir aquest àudio.</audio>
-    -->
+            <!-- ÀUDIO (fase II): <audio controls preload="none" src="audio/musica-01.mp3"></audio> -->
           </div>
         </article>
         <article class="object-card" data-category="musica">
-          <div class="object-image"><img src="imatges/musica-i-festes/capçal-de-guarniment.jpg" alt="Fotografia de capçal de guarniment" loading="lazy"
-              onload="this.style.display='block';this.nextElementSibling.style.display='none'"
-              onerror="this.style.display='none'">
-            <div class="photo-placeholder"><span class="photo-number">73</span><span>Afegiu la
-                fotografia</span><small>imatges/musica-02.jpg</small></div>
-          </div>
+          <div class="object-image"><div class="photo-placeholder"><span class="photo-number">76</span><span>Afegiu la fotografia</span><small>imatges/musica-i-festes/capcal-de-guarniment.jpg</small></div><img src="imatges/musica-i-festes/capcal-de-guarniment.jpg" alt="Fotografia del capçal de guarniment" loading="lazy" onerror="this.remove()"></div>
           <div class="object-info">
             <p class="object-category">MÚSICA I FESTES</p>
             <h3>Capçal de guarniment</h3>
             <p>Es feia servir en el cap del macho en les processons i en actes de festa major, especialment en festes com Sant Antoni dels Tres Tombs.</p>
-            <!-- <p class="memory">Afegiu-hi un record d’Antonio, una anècdota o informació sobre la seva història.</p>
-            ÀUDIO OPCIONAL: deseu-lo com audio/musica-02.mp3 i traieu els comentaris d'aquest reproductor.
-    <audio controls preload="none"><source src="audio/musica-02.mp3" type="audio/mpeg">El navegador no pot reproduir aquest àudio.</audio>
-    -->
+            <!-- <p class="memory">Afegiu-hi un record d’Antonio, una anècdota o informació sobre la seva història.</p> -->
+            <!-- ÀUDIO (fase II): <audio controls preload="none" src="audio/musica-02.mp3"></audio> -->
           </div>
         </article>
         <article class="object-card" data-category="musica">
-          <div class="object-image"><img src="imatges/musica-i-festes/castanyoles-postizas-1910.jpg" alt="Fotografia de Castanyoles="lazy"
-              onload="this.style.display='block';this.nextElementSibling.style.display='none'"
-              onerror="this.style.display='none'">
-            <div class="photo-placeholder"><span class="photo-number">74</span><span>Afegiu la
-                fotografia</span><small>imatges/musica-03.jpg</small></div>
-          </div>
+          <div class="object-image"><div class="photo-placeholder"><span class="photo-number">77</span><span>Afegiu la fotografia</span><small>imatges/musica-i-festes/castanyoles-postizas-1910.jpg</small></div><img src="imatges/musica-i-festes/castanyoles-postizas-1910.jpg" alt="Fotografia de les castanyoles" loading="lazy" onerror="this.remove()"></div>
           <div class="object-info">
             <p class="object-category">MÚSICA I FESTES</p>
             <h3>Castanyoles (postizas) de l'any 1910</h3>
-            <p>Per acompayar a les rondalles els dies de ronda i dels balls populars.</p>
-           <!-- <p class="memory">Afegiu-hi un record d’Antonio, una anècdota o informació sobre la seva història.</p>
-             ÀUDIO OPCIONAL: deseu-lo com audio/musica-03.mp3 i traieu els comentaris d'aquest reproductor.
-    <audio controls preload="none"><source src="audio/musica-03.mp3" type="audio/mpeg">El navegador no pot reproduir aquest àudio.</audio>
-    -->
+            <p>Per acompanyar a les rondalles els dies de ronda i dels balls populars.</p>
+            <!-- <p class="memory">Afegiu-hi un record d’Antonio, una anècdota o informació sobre la seva història.</p> -->
+            <!-- ÀUDIO (fase II): <audio controls preload="none" src="audio/musica-03.mp3"></audio> -->
           </div>
         </article>
         <article class="object-card" data-category="musica">
-          <div class="object-image"><img src="imatges/musica-i-festes/guitarra-i-guitarros-1925.jpg" alt="Fotografia de guitarra i guitarra-i-guitarros-1925" loading="lazy"
-              onload="this.style.display='block';this.nextElementSibling.style.display='none'"
-              onerror="this.style.display='none'">
-            <div class="photo-placeholder"><span class="photo-number">75</span><span>Afegiu la
-                fotografia</span><small>imatges/musica-04.jpg</small></div>
-          </div>
+          <div class="object-image"><div class="photo-placeholder"><span class="photo-number">78</span><span>Afegiu la fotografia</span><small>imatges/musica-i-festes/guitarra-i-guitarros-1925.jpg</small></div><img src="imatges/musica-i-festes/guitarra-i-guitarros-1925.jpg" alt="Fotografia de la guitarra i els guitarrons de 1925" loading="lazy" onerror="this.remove()"></div>
           <div class="object-info">
             <p class="object-category">MÚSICA I FESTES</p>
             <h3>Guitarra i guitarros de 1925</h3>
             <p>Eren dels grups de música popular per les rondalles i els balls tradicionals de la jota.</p>
-            <p class="memory">La guitarra va ser un regal dels amics del tío Leandro pel trencament de la seva propia en una trifulca entre penyes.</p>
-            <!-- ÀUDIO OPCIONAL: deseu-lo com audio/musica-04.mp3 i traieu els comentaris d'aquest reproductor.
-    <audio controls preload="none"><source src="audio/musica-04.mp3" type="audio/mpeg">El navegador no pot reproduir aquest àudio.</audio>
-    -->
+            <p class="memory">La guitarra va ser un regal dels amics del tío Leandro pel trencament de la seva pròpia en una trifulca entre penyes.</p>
+            <!-- ÀUDIO (fase II): <audio controls preload="none" src="audio/musica-04.mp3"></audio> -->
           </div>
         </article>
         <article class="object-card" data-category="musica">
-          <div class="object-image"><img src="imatges/musica-i-festes/miniatures-instruments-musicals.jpg" alt="Fotografia de les miniatures" loading="lazy"
-              onload="this.style.display='block';this.nextElementSibling.style.display='none'"
-              onerror="this.style.display='none'">
-            <div class="photo-placeholder"><span class="photo-number">76</span><span>Afegiu la
-                fotografia</span><small>imatges/musica-05.jpg</small></div>
-          </div>
+          <div class="object-image"><div class="photo-placeholder"><span class="photo-number">79</span><span>Afegiu la fotografia</span><small>imatges/musica-i-festes/miniatures-instruments-musicals.jpg</small></div><img src="imatges/musica-i-festes/miniatures-instruments-musicals.jpg" alt="Fotografia de les miniatures d'instruments musicals" loading="lazy" onerror="this.remove()"></div>
           <div class="object-info">
             <p class="object-category">MÚSICA I FESTES</p>
             <h3>Miniatures d'instruments musicals.</h3>
             <p>Fets a mà.</p>
-            <!--<p class="memory">Afegiu-hi un record d’Antonio, una anècdota o informació sobre la seva història.</p>
-             ÀUDIO OPCIONAL: deseu-lo com audio/musica-05.mp3 i traieu els comentaris d'aquest reproductor.
-    <audio controls preload="none"><source src="audio/musica-05.mp3" type="audio/mpeg">El navegador no pot reproduir aquest àudio.</audio>
-    -->
+            <!-- <p class="memory">Afegiu-hi un record d’Antonio, una anècdota o informació sobre la seva història.</p> -->
+            <!-- ÀUDIO (fase II): <audio controls preload="none" src="audio/musica-05.mp3"></audio> -->
           </div>
         </article>
         <article class="object-card" data-category="musica">
-          <div class="object-image"><img src="imatges/musica-06.jpg" alt="Fotografia de l'objecte 06" loading="lazy"
-              onload="this.style.display='block';this.nextElementSibling.style.display='none'"
-              onerror="this.style.display='none'">
-            <div class="photo-placeholder"><span class="photo-number">77</span><span>Afegiu la
-                fotografia</span><small>imatges/musica-06.jpg</small></div>
-          </div>
+          <div class="object-image"><div class="photo-placeholder"><span class="photo-number">80</span><span>Afegiu la fotografia</span><small>imatges/musica-06.jpg</small></div><img src="imatges/musica-06.jpg" alt="Fotografia de l'objecte 06" loading="lazy" onerror="this.remove()"></div>
           <div class="object-info">
             <p class="object-category">MÚSICA I FESTES</p>
             <h3>Nom de l’objecte 06</h3>
             <p>Escriviu aquí què és aquest objecte, per a què servia i com s’utilitzava.</p>
             <p class="memory">Afegiu-hi un record d’Antonio, una anècdota o informació sobre la seva història.</p>
-            <!-- ÀUDIO OPCIONAL: deseu-lo com audio/musica-06.mp3 i traieu els comentaris d'aquest reproductor.
-    <audio controls preload="none"><source src="audio/musica-06.mp3" type="audio/mpeg">El navegador no pot reproduir aquest àudio.</audio>
-    -->
+            <!-- ÀUDIO (fase II): <audio controls preload="none" src="audio/musica-06.mp3"></audio> -->
           </div>
         </article>
         <article class="object-card" data-category="musica">
-          <div class="object-image"><img src="imatges/musica-07.jpg" alt="Fotografia de l'objecte 07" loading="lazy"
-              onload="this.style.display='block';this.nextElementSibling.style.display='none'"
-              onerror="this.style.display='none'">
-            <div class="photo-placeholder"><span class="photo-number">78</span><span>Afegiu la
-                fotografia</span><small>imatges/musica-07.jpg</small></div>
-          </div>
+          <div class="object-image"><div class="photo-placeholder"><span class="photo-number">81</span><span>Afegiu la fotografia</span><small>imatges/musica-07.jpg</small></div><img src="imatges/musica-07.jpg" alt="Fotografia de l'objecte 07" loading="lazy" onerror="this.remove()"></div>
           <div class="object-info">
             <p class="object-category">MÚSICA I FESTES</p>
             <h3>Nom de l’objecte 07</h3>
             <p>Escriviu aquí què és aquest objecte, per a què servia i com s’utilitzava.</p>
             <p class="memory">Afegiu-hi un record d’Antonio, una anècdota o informació sobre la seva història.</p>
-            <!-- ÀUDIO OPCIONAL: deseu-lo com audio/musica-07.mp3 i traieu els comentaris d'aquest reproductor.
-    <audio controls preload="none"><source src="audio/musica-07.mp3" type="audio/mpeg">El navegador no pot reproduir aquest àudio.</audio>
-    -->
+            <!-- ÀUDIO (fase II): <audio controls preload="none" src="audio/musica-07.mp3"></audio> -->
           </div>
         </article>
         <article class="object-card" data-category="musica">
-          <div class="object-image"><img src="imatges/musica-08.jpg" alt="Fotografia de l'objecte 08" loading="lazy"
-              onload="this.style.display='block';this.nextElementSibling.style.display='none'"
-              onerror="this.style.display='none'">
-            <div class="photo-placeholder"><span class="photo-number">79</span><span>Afegiu la
-                fotografia</span><small>imatges/musica-08.jpg</small></div>
-          </div>
+          <div class="object-image"><div class="photo-placeholder"><span class="photo-number">82</span><span>Afegiu la fotografia</span><small>imatges/musica-08.jpg</small></div><img src="imatges/musica-08.jpg" alt="Fotografia de l'objecte 08" loading="lazy" onerror="this.remove()"></div>
           <div class="object-info">
             <p class="object-category">MÚSICA I FESTES</p>
             <h3>Nom de l’objecte 08</h3>
             <p>Escriviu aquí què és aquest objecte, per a què servia i com s’utilitzava.</p>
             <p class="memory">Afegiu-hi un record d’Antonio, una anècdota o informació sobre la seva història.</p>
-            <!-- ÀUDIO OPCIONAL: deseu-lo com audio/musica-08.mp3 i traieu els comentaris d'aquest reproductor.
-    <audio controls preload="none"><source src="audio/musica-08.mp3" type="audio/mpeg">El navegador no pot reproduir aquest àudio.</audio>
-    -->
+            <!-- ÀUDIO (fase II): <audio controls preload="none" src="audio/musica-08.mp3"></audio> -->
           </div>
         </article>
         <article class="object-card" data-category="musica">
-          <div class="object-image"><img src="imatges/musica-09.jpg" alt="Fotografia de l'objecte 09" loading="lazy"
-              onload="this.style.display='block';this.nextElementSibling.style.display='none'"
-              onerror="this.style.display='none'">
-            <div class="photo-placeholder"><span class="photo-number">80</span><span>Afegiu la
-                fotografia</span><small>imatges/musica-09.jpg</small></div>
-          </div>
+          <div class="object-image"><div class="photo-placeholder"><span class="photo-number">83</span><span>Afegiu la fotografia</span><small>imatges/musica-09.jpg</small></div><img src="imatges/musica-09.jpg" alt="Fotografia de l'objecte 09" loading="lazy" onerror="this.remove()"></div>
           <div class="object-info">
             <p class="object-category">MÚSICA I FESTES</p>
             <h3>Nom de l’objecte 09</h3>
             <p>Escriviu aquí què és aquest objecte, per a què servia i com s’utilitzava.</p>
             <p class="memory">Afegiu-hi un record d’Antonio, una anècdota o informació sobre la seva història.</p>
-            <!-- ÀUDIO OPCIONAL: deseu-lo com audio/musica-09.mp3 i traieu els comentaris d'aquest reproductor.
-    <audio controls preload="none"><source src="audio/musica-09.mp3" type="audio/mpeg">El navegador no pot reproduir aquest àudio.</audio>
-    -->
+            <!-- ÀUDIO (fase II): <audio controls preload="none" src="audio/musica-09.mp3"></audio> -->
           </div>
         </article>
       </div>
-      <p class="muted" style="margin-top:45px">La col·lecció pot créixer a poc a poc, sense perdre l’espai i la calma de
-        cada història.</p>
+      <p class="muted" style="margin-top:45px">La col·lecció pot créixer a poc a poc, sense perdre l’espai i la calma de cada història.</p>
     </section>
     <section class="section village" id="poble">
       <div class="section-label">03 · EL LLOC D’ON VENIM</div>
       <div class="village-layout">
         <div>
           <h2>Sant Vicente<br><em>de Piedrahita.</em></h2>
-          <p>Per entendre els objectes, també cal conèixer el lloc on van formar part de la vida quotidiana. Aquesta
-            secció és una finestra a la història, el paisatge i les tradicions de Sant Vicente de Piedrahita.</p>
-          <p class="muted"><em>Afegiu aquí una breu història del poble, records de la família, festes, oficis o dades
-              que vulgueu preservar.</em></p>
+          <p>Per entendre els objectes, també cal conèixer el lloc on van formar part de la vida quotidiana. Aquesta secció és una finestra a la història, el paisatge i les tradicions de Sant Vicente de Piedrahita.</p>
+          <p class="muted"><em>Afegiu aquí una breu història del poble, records de la família, festes, oficis o dades que vulgueu preservar.</em></p>
         </div>
         <div class="village-photos">
           <figure>
-            <div class="village-photo"><img src="imatges/plaça.jpg" alt="Vista de Sant Vicente de Piedrahita"
-                loading="lazy" onload="this.style.display='block';this.nextElementSibling.style.display='none'"
-                onerror="this.style.display='none'">
-              <div class="photo-placeholder">Fotografia del poble<small>imatges/poble.jpg</small></div>
-            </div>
+            <div class="village-photo"><div class="photo-placeholder">Fotografia del poble<small>imatges/placa.jpg</small></div><img src="imatges/placa.jpg" alt="Vista de Sant Vicente de Piedrahita" loading="lazy" onerror="this.remove()"></div>
             <figcaption>El poble i el seu paisatge</figcaption>
           </figure>
           <figure>
-            <div class="village-photo"><img src="imatges/escut.jpeg" alt="Escut del poble" loading="lazy"
-                onload="this.style.display='block';this.nextElementSibling.style.display='none'"
-                onerror="this.style.display='none'">
-              <div class="photo-placeholder">Escut o imatge històrica<small>imatges/escut.jpg</small></div>
-            </div>
+            <div class="village-photo"><div class="photo-placeholder">Escut o imatge històrica<small>imatges/escut.jpeg</small></div><img src="imatges/escut.jpeg" alt="Escut del poble" loading="lazy" onerror="this.remove()"></div>
             <figcaption>Un símbol de la identitat local</figcaption>
           </figure>
         </div>
@@ -1869,7 +919,6 @@
   <footer class="site-footer"><a class="brand" href="#inici">EL PALLER <span>·</span> MEMÒRIA VIVA</a>
     <p>Creat amb estima per Antonio, Llum i Laura.</p><a href="#inici">Torna a l’inici ↑</a>
   </footer>
-  <script>document.querySelectorAll('.filter-button').forEach(button => button.addEventListener('click', () => { const filter = button.dataset.filter; document.querySelectorAll('.filter-button').forEach(b => b.classList.toggle('active', b === button)); document.querySelectorAll('.object-card').forEach(card => card.hidden = filter !== 'tots' && card.dataset.category !== filter) }));</script>
 </body>
 
 </html>
